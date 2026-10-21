@@ -194,30 +194,32 @@ public partial class MainWindow
     /// <summary>Ждёт, пока страница отрисует последнюю версию текста (и схемы Mermaid).</summary>
     private async Task<bool> WaitRenderedAsync(double timeoutMs)
     {
-        var tab = ActiveTab;
-        if (tab?.Core is null)
-        {
-            return false;
-        }
-
         var until = DateTime.UtcNow.AddMilliseconds(timeoutMs);
         while (DateTime.UtcNow < until)
         {
-            if (tab.IsReady)
+            var tab = ActiveTab;
+            if (tab?.Core is not null && tab.IsReady)
             {
-                string raw = await tab.Core.ExecuteScriptAsync("JSON.stringify(window.mdv ? mdv.getState() : null)");
-                string? json = JsonSerializer.Deserialize<string?>(raw);
-                if (json is not null)
+                try
                 {
-                    using var doc = JsonDocument.Parse(json);
-                    var st = doc.RootElement;
-                    int rendered = st.GetProperty("renderedVersion").GetInt32();
-                    int pending = st.GetProperty("mermaidPending").GetInt32();
-                    if (rendered >= tab.TextVersion && pending == 0)
+                    string raw = await tab.Core.ExecuteScriptAsync("JSON.stringify(window.mdv ? mdv.getState() : null)");
+                    string? json = JsonSerializer.Deserialize<string?>(raw);
+                    if (json is not null && json != "null")
                     {
-                        await Task.Delay(150);
-                        return true;
+                        using var doc = JsonDocument.Parse(json);
+                        var st = doc.RootElement;
+                        int rendered = st.GetProperty("renderedVersion").GetInt32();
+                        int pending = st.GetProperty("mermaidPending").GetInt32();
+                        if (rendered >= tab.TextVersion && pending == 0)
+                        {
+                            await Task.Delay(150);
+                            return true;
+                        }
                     }
+                }
+                catch (Exception ex)
+                {
+                    Log.Error("waitRendered", ex);
                 }
             }
 

@@ -100,12 +100,17 @@ jobs:
           "Удаление: код $($u.ExitCode), exe остался: $(Test-Path $exe)" | Tee-Object -Append logs/install-check.log
 
       - name: UI tests
+        timeout-minutes: 40
         env:
           MDVIEWER_EXE: ${{ github.workspace }}\publish\MDViewer.exe
           MDVIEWER_TEST_OUT: ${{ github.workspace }}\ui-results
         run: |
-          dotnet test tests/MdViewer.UiTests/MdViewer.UiTests.csproj -c Release --no-build --logger "trx;LogFileName=ui-tests.trx" --logger "console;verbosity=normal" --results-directory ui-results/trx *>&1 | Tee-Object logs/ui-tests.log
-          if ($LASTEXITCODE) { exit 1 }
+          # Вывод — сразу в файл через cmd: дочерние процессы WebView2 не должны держать канал вывода шага.
+          cmd /c "dotnet test tests\MdViewer.UiTests\MdViewer.UiTests.csproj -c Release --no-build --logger trx;LogFileName=ui-tests.trx --logger console;verbosity=normal --results-directory ui-results\trx --blame-hang-timeout 4m --blame-hang-dump-type none > logs\ui-tests.log 2>&1"
+          $code = $LASTEXITCODE
+          Get-Content logs/ui-tests.log -Tail 60
+          Get-Process MDViewer, msedgewebview2 -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+          if ($code) { exit 1 }
 
       - name: Exported HTML opened in Edge without internet (screenshot)
         if: always()

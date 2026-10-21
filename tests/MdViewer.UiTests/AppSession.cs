@@ -176,7 +176,7 @@ public sealed class AppSession : IDisposable
         return s;
     }
 
-    public JsonElement Call(object request, int timeoutSec = 90)
+    public JsonElement Call(object request, int timeoutSec = 45)
     {
         string line = JsonSerializer.Serialize(request);
         _writer.WriteLine(line);
@@ -322,6 +322,18 @@ public sealed class AppSession : IDisposable
         catch
         {
             // ignore
+        }
+
+        try
+        {
+            // Вместе с процессами WebView2, иначе они держат вывод тестов.
+            using var p = Process.GetProcessById(App.ProcessId);
+            p.Kill(entireProcessTree: true);
+            p.WaitForExit(10000);
+        }
+        catch
+        {
+            // уже завершён
         }
 
         try
