@@ -1,0 +1,378 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.1
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Program Files (x86)\Inno Setup 6\ISPPBuiltins.iss
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 37
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Russian.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 37
+   Reading file: C:\Program Files (x86)\Inno Setup 6\Languages\Russian.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 40
+Parsing [Tasks] section, line 41
+Parsing [Icons] section, line 47
+Parsing [Icons] section, line 48
+Parsing [Registry] section, line 52
+Parsing [Registry] section, line 53
+Parsing [Registry] section, line 54
+Parsing [Registry] section, line 55
+Parsing [Registry] section, line 57
+Parsing [Registry] section, line 58
+Parsing [Registry] section, line 59
+Parsing [Registry] section, line 60
+Parsing [Registry] section, line 61
+Parsing [Registry] section, line 63
+Parsing [Registry] section, line 64
+Parsing [UninstallDelete] section, line 70
+Parsing [Run] section, line 67
+Parsing [Files] section, line 44
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Accessibility.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\clretwrc.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\clrgc.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\clrjit.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\coreclr.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\createdump.exe
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\D3DCompiler_47_cor3.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\DirectWriteForwarder.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\hostfxr.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\hostpolicy.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Markdig.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\MdViewer.Core.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\MDViewer.deps.json
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\MDViewer.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\MDViewer.exe
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\MDViewer.runtimeconfig.json
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.CSharp.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.DiaSymReader.Native.amd64.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.VisualBasic.Core.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.VisualBasic.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.VisualBasic.Forms.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.Core.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.Core.xml
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.WinForms.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.WinForms.xml
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.Wpf.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Web.WebView2.Wpf.xml
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Win32.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Win32.Registry.AccessControl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Win32.Registry.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\Microsoft.Win32.SystemEvents.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\mscordaccore.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\mscordaccore_amd64_amd64_8.0.3126.42015.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\mscordbi.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\mscorlib.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\mscorrc.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\msquic.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\netstandard.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PenImc_cor3.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationCore.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework-SystemCore.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework-SystemData.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework-SystemDrawing.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework-SystemXml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework-SystemXmlLinq.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.Aero.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.Aero2.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.AeroLite.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.Classic.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.Luna.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationFramework.Royale.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationNative_cor3.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\PresentationUI.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ReachFramework.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.AppContext.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Buffers.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.CodeDom.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Collections.Concurrent.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Collections.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Collections.Immutable.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Collections.NonGeneric.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Collections.Specialized.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.Annotations.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.DataAnnotations.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.EventBasedAsync.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ComponentModel.TypeConverter.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Configuration.ConfigurationManager.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Configuration.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Console.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Core.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Data.Common.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Data.DataSetExtensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Data.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Design.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.Contracts.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.Debug.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.DiagnosticSource.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.EventLog.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.EventLog.Messages.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.FileVersionInfo.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.PerformanceCounter.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.Process.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.StackTrace.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.TextWriterTraceListener.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.Tools.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.TraceSource.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Diagnostics.Tracing.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.DirectoryServices.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Drawing.Common.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Drawing.Design.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Drawing.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Drawing.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Dynamic.Runtime.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Formats.Asn1.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Formats.Tar.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Globalization.Calendars.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Globalization.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Globalization.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Compression.Brotli.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Compression.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Compression.FileSystem.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Compression.Native.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Compression.ZipFile.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.FileSystem.AccessControl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.FileSystem.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.FileSystem.DriveInfo.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.FileSystem.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.FileSystem.Watcher.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.IsolatedStorage.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.MemoryMappedFiles.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Packaging.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Pipes.AccessControl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.Pipes.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.IO.UnmanagedMemoryStream.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Linq.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Linq.Expressions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Linq.Parallel.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Linq.Queryable.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Memory.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Http.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Http.Json.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.HttpListener.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Mail.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.NameResolution.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.NetworkInformation.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Ping.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Quic.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Requests.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Security.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.ServicePoint.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.Sockets.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.WebClient.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.WebHeaderCollection.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.WebProxy.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.WebSockets.Client.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Net.WebSockets.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Numerics.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Numerics.Vectors.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ObjectModel.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Printing.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Private.CoreLib.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Private.DataContractSerialization.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Private.Uri.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Private.Xml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Private.Xml.Linq.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.DispatchProxy.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Emit.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Emit.ILGeneration.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Emit.Lightweight.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Metadata.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Reflection.TypeExtensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Resources.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Resources.Reader.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Resources.ResourceManager.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Resources.Writer.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.CompilerServices.Unsafe.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.CompilerServices.VisualC.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Handles.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.InteropServices.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.InteropServices.JavaScript.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.InteropServices.RuntimeInformation.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Intrinsics.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Loader.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Numerics.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Serialization.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Serialization.Formatters.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Serialization.Json.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Serialization.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Runtime.Serialization.Xml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.AccessControl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Claims.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Algorithms.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Cng.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Csp.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Encoding.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.OpenSsl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Pkcs.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.ProtectedData.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.X509Certificates.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Cryptography.Xml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Permissions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Principal.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.Principal.Windows.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Security.SecureString.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ServiceModel.Web.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ServiceProcess.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.Encoding.CodePages.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.Encoding.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.Encoding.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.Encodings.Web.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.Json.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Text.RegularExpressions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.AccessControl.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Channels.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Overlapped.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Tasks.Dataflow.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Tasks.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Tasks.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Tasks.Parallel.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Thread.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.ThreadPool.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Threading.Timer.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Transactions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Transactions.Local.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.ValueTuple.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Web.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Web.HttpUtility.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Controls.Ribbon.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Extensions.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Forms.Design.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Forms.Design.Editors.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Forms.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Forms.Primitives.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Input.Manipulations.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Windows.Presentation.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xaml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.Linq.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.ReaderWriter.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.Serialization.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.XDocument.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.XmlDocument.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.XmlSerializer.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.XPath.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\System.Xml.XPath.XDocument.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\UIAutomationClient.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\UIAutomationClientSideProviders.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\UIAutomationProvider.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\UIAutomationTypes.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\vcruntime140_cor3.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\WebView2Loader.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\WindowsBase.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\WindowsFormsIntegration.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wpfgfx_cor3.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\Microsoft.VisualBasic.Forms.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\PresentationCore.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\PresentationFramework.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\PresentationUI.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\ReachFramework.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Windows.Controls.Ribbon.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Windows.Forms.Design.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Windows.Forms.Primitives.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Windows.Forms.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Windows.Input.Manipulations.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\System.Xaml.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\UIAutomationClient.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\UIAutomationClientSideProviders.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\UIAutomationProvider.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\UIAutomationTypes.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\WindowsBase.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\ru\WindowsFormsIntegration.resources.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\runtimes\win-x64\native\WebView2Loader.dll
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\page.html
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\app.bundle.js
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\app.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\github-markdown-dark.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\github-markdown-light.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\hljs-github-dark.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\hljs-github.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\katex.min.css
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_AMS-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Caligraphic-Bold.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Caligraphic-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Fraktur-Bold.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Fraktur-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Main-Bold.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Main-BoldItalic.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Main-Italic.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Main-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Math-BoldItalic.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Math-Italic.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Bold.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Italic.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Script-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Size1-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Size2-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Size3-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Size4-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\katex\fonts\KaTeX_Typewriter-Regular.woff2
+   Compressing: D:\a\md-viewer\md-viewer\installer\..\publish\wwwroot\lib\mermaid\mermaid.min.js
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (26.094 sec). Resulting Setup program filename is:
+D:\a\md-viewer\md-viewer\artifacts\MDViewer-Setup.exe

@@ -1,0 +1,1600 @@
+﻿2026-10-21 09:44:30.343   Log opened. (Time zone: UTC+00:00)
+2026-10-21 09:44:30.343   Setup version: Inno Setup version 6.7.1
+2026-10-21 09:44:30.343   Original Setup EXE: D:\a\md-viewer\md-viewer\artifacts\MDViewer-Setup.exe
+2026-10-21 09:44:30.343   Setup command line: /SL5="$B0164,49930205,856576,D:\a\md-viewer\md-viewer\artifacts\MDViewer-Setup.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /TASKS=assoc /LOG=logs\install.log
+2026-10-21 09:44:30.343   Windows version: 10.0.26100
+2026-10-21 09:44:30.344   Windows architecture: x64 (64-bit)
+2026-10-21 09:44:30.344   Machine types supported by system: x86 x64
+2026-10-21 09:44:30.344   User privileges: Administrative
+2026-10-21 09:44:30.347   Administrative install mode: No
+2026-10-21 09:44:30.347   Install mode root key: HKEY_CURRENT_USER
+2026-10-21 09:44:30.347   64-bit install mode: Yes
+2026-10-21 09:44:30.347   RedirectionGuard status for current process: Enabled in enforcing mode
+2026-10-21 09:44:30.349   Created protected temporary directory: C:\Users\RUNNER~1\AppData\Local\Temp\is-Q9FIQM7PT2.tmp
+2026-10-21 09:44:30.852   Found 264 files to register with RestartManager.
+2026-10-21 09:44:30.852   Calling RestartManager's RmGetList.
+2026-10-21 09:44:30.863   RmGetList finished successfully.
+2026-10-21 09:44:30.863   RestartManager found no applications using one of our files.
+2026-10-21 09:44:30.865   Starting the installation process.
+2026-10-21 09:44:30.867   Creating directory: C:\Users\runneradmin\AppData\Local\Programs
+2026-10-21 09:44:30.867   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer
+2026-10-21 09:44:30.867   Directory for uninstall files: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer
+2026-10-21 09:44:30.869   Creating new uninstall log: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\unins000.dat
+2026-10-21 09:44:30.950   -- File entry --
+2026-10-21 09:44:30.950   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\unins000.exe
+2026-10-21 09:44:30.950   Non-default bitness: 32-bit
+2026-10-21 09:44:31.164   Time stamp of our file: 2026-10-21 09:44:29.971
+2026-10-21 09:44:31.164   Installing the file.
+2026-10-21 09:44:31.186   Successfully installed the file.
+2026-10-21 09:44:31.186   -- File entry --
+2026-10-21 09:44:31.186   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Accessibility.dll
+2026-10-21 09:44:31.186   Time stamp of our file: 2026-08-21 21:55:46.000
+2026-10-21 09:44:31.186   Installing the file.
+2026-10-21 09:44:31.188   Successfully installed the file.
+2026-10-21 09:44:31.188   -- File entry --
+2026-10-21 09:44:31.188   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\clretwrc.dll
+2026-10-21 09:44:31.188   Time stamp of our file: 2026-08-20 21:03:28.000
+2026-10-21 09:44:31.188   Installing the file.
+2026-10-21 09:44:31.201   Successfully installed the file.
+2026-10-21 09:44:31.201   -- File entry --
+2026-10-21 09:44:31.201   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\clrgc.dll
+2026-10-21 09:44:31.201   Time stamp of our file: 2026-08-20 21:01:24.000
+2026-10-21 09:44:31.201   Installing the file.
+2026-10-21 09:44:31.221   Successfully installed the file.
+2026-10-21 09:44:31.221   -- File entry --
+2026-10-21 09:44:31.221   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\clrjit.dll
+2026-10-21 09:44:31.221   Time stamp of our file: 2026-08-20 21:00:36.000
+2026-10-21 09:44:31.221   Installing the file.
+2026-10-21 09:44:31.276   Successfully installed the file.
+2026-10-21 09:44:31.276   -- File entry --
+2026-10-21 09:44:31.276   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\coreclr.dll
+2026-10-21 09:44:31.276   Time stamp of our file: 2026-08-20 20:57:48.000
+2026-10-21 09:44:31.276   Installing the file.
+2026-10-21 09:44:31.410   Successfully installed the file.
+2026-10-21 09:44:31.410   -- File entry --
+2026-10-21 09:44:31.410   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\createdump.exe
+2026-10-21 09:44:31.410   Time stamp of our file: 2026-08-20 21:03:28.000
+2026-10-21 09:44:31.410   Installing the file.
+2026-10-21 09:44:31.412   Successfully installed the file.
+2026-10-21 09:44:31.412   -- File entry --
+2026-10-21 09:44:31.412   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\D3DCompiler_47_cor3.dll
+2026-10-21 09:44:31.412   Time stamp of our file: 2026-01-27 06:18:40.000
+2026-10-21 09:44:31.412   Installing the file.
+2026-10-21 09:44:31.553   Successfully installed the file.
+2026-10-21 09:44:31.553   -- File entry --
+2026-10-21 09:44:31.553   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\DirectWriteForwarder.dll
+2026-10-21 09:44:31.553   Time stamp of our file: 2026-08-22 00:39:22.000
+2026-10-21 09:44:31.553   Installing the file.
+2026-10-21 09:44:31.569   Successfully installed the file.
+2026-10-21 09:44:31.569   -- File entry --
+2026-10-21 09:44:31.569   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\hostfxr.dll
+2026-10-21 09:44:31.569   Time stamp of our file: 2026-08-20 21:13:26.000
+2026-10-21 09:44:31.570   Installing the file.
+2026-10-21 09:44:31.579   Successfully installed the file.
+2026-10-21 09:44:31.579   -- File entry --
+2026-10-21 09:44:31.579   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\hostpolicy.dll
+2026-10-21 09:44:31.579   Time stamp of our file: 2026-08-20 21:13:28.000
+2026-10-21 09:44:31.579   Installing the file.
+2026-10-21 09:44:31.588   Successfully installed the file.
+2026-10-21 09:44:31.589   -- File entry --
+2026-10-21 09:44:31.589   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Markdig.dll
+2026-10-21 09:44:31.589   Time stamp of our file: 2024-10-25 20:07:12.000
+2026-10-21 09:44:31.589   Installing the file.
+2026-10-21 09:44:31.601   Successfully installed the file.
+2026-10-21 09:44:31.601   -- File entry --
+2026-10-21 09:44:31.601   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\MdViewer.Core.dll
+2026-10-21 09:44:31.601   Time stamp of our file: 2026-10-21 09:43:38.000
+2026-10-21 09:44:31.601   Installing the file.
+2026-10-21 09:44:31.604   Successfully installed the file.
+2026-10-21 09:44:31.604   -- File entry --
+2026-10-21 09:44:31.605   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\MDViewer.deps.json
+2026-10-21 09:44:31.605   Time stamp of our file: 2026-10-21 09:43:56.000
+2026-10-21 09:44:31.605   Installing the file.
+2026-10-21 09:44:31.605   Successfully installed the file.
+2026-10-21 09:44:31.605   -- File entry --
+2026-10-21 09:44:31.605   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\MDViewer.dll
+2026-10-21 09:44:31.605   Time stamp of our file: 2026-10-21 09:43:56.000
+2026-10-21 09:44:31.606   Installing the file.
+2026-10-21 09:44:31.612   Successfully installed the file.
+2026-10-21 09:44:31.612   -- File entry --
+2026-10-21 09:44:31.612   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\MDViewer.exe
+2026-10-21 09:44:31.613   Time stamp of our file: 2026-10-21 09:43:56.000
+2026-10-21 09:44:31.613   Installing the file.
+2026-10-21 09:44:31.616   Successfully installed the file.
+2026-10-21 09:44:31.616   -- File entry --
+2026-10-21 09:44:31.616   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\MDViewer.runtimeconfig.json
+2026-10-21 09:44:31.616   Time stamp of our file: 2026-10-21 09:43:56.000
+2026-10-21 09:44:31.616   Installing the file.
+2026-10-21 09:44:31.616   Successfully installed the file.
+2026-10-21 09:44:31.616   -- File entry --
+2026-10-21 09:44:31.616   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.CSharp.dll
+2026-10-21 09:44:31.616   Time stamp of our file: 2026-08-20 21:23:32.000
+2026-10-21 09:44:31.616   Installing the file.
+2026-10-21 09:44:31.648   Successfully installed the file.
+2026-10-21 09:44:31.648   -- File entry --
+2026-10-21 09:44:31.648   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.DiaSymReader.Native.amd64.dll
+2026-10-21 09:44:31.648   Time stamp of our file: 2026-08-05 14:09:02.000
+2026-10-21 09:44:31.648   Installing the file.
+2026-10-21 09:44:31.703   Successfully installed the file.
+2026-10-21 09:44:31.703   -- File entry --
+2026-10-21 09:44:31.703   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.VisualBasic.Core.dll
+2026-10-21 09:44:31.705   Time stamp of our file: 2026-08-20 21:23:36.000
+2026-10-21 09:44:31.705   Installing the file.
+2026-10-21 09:44:31.741   Successfully installed the file.
+2026-10-21 09:44:31.741   -- File entry --
+2026-10-21 09:44:31.741   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.VisualBasic.dll
+2026-10-21 09:44:31.743   Time stamp of our file: 2026-08-21 21:57:00.000
+2026-10-21 09:44:31.743   Installing the file.
+2026-10-21 09:44:31.743   Successfully installed the file.
+2026-10-21 09:44:31.743   -- File entry --
+2026-10-21 09:44:31.743   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.VisualBasic.Forms.dll
+2026-10-21 09:44:31.743   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:31.743   Installing the file.
+2026-10-21 09:44:31.758   Successfully installed the file.
+2026-10-21 09:44:31.758   -- File entry --
+2026-10-21 09:44:31.758   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.Core.dll
+2026-10-21 09:44:31.758   Time stamp of our file: 2024-11-10 08:57:50.000
+2026-10-21 09:44:31.758   Installing the file.
+2026-10-21 09:44:31.768   Successfully installed the file.
+2026-10-21 09:44:31.768   -- File entry --
+2026-10-21 09:44:31.768   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.Core.xml
+2026-10-21 09:44:31.768   Time stamp of our file: 2024-11-10 08:45:24.000
+2026-10-21 09:44:31.768   Installing the file.
+2026-10-21 09:44:31.778   Successfully installed the file.
+2026-10-21 09:44:31.778   -- File entry --
+2026-10-21 09:44:31.778   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.WinForms.dll
+2026-10-21 09:44:31.778   Time stamp of our file: 2024-11-10 08:57:38.000
+2026-10-21 09:44:31.778   Installing the file.
+2026-10-21 09:44:31.780   Successfully installed the file.
+2026-10-21 09:44:31.780   -- File entry --
+2026-10-21 09:44:31.780   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.WinForms.xml
+2026-10-21 09:44:31.780   Time stamp of our file: 2024-11-10 08:45:22.000
+2026-10-21 09:44:31.780   Installing the file.
+2026-10-21 09:44:31.782   Successfully installed the file.
+2026-10-21 09:44:31.782   -- File entry --
+2026-10-21 09:44:31.782   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.Wpf.dll
+2026-10-21 09:44:31.782   Time stamp of our file: 2024-11-10 08:58:00.000
+2026-10-21 09:44:31.782   Installing the file.
+2026-10-21 09:44:31.785   Successfully installed the file.
+2026-10-21 09:44:31.785   -- File entry --
+2026-10-21 09:44:31.785   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Web.WebView2.Wpf.xml
+2026-10-21 09:44:31.785   Time stamp of our file: 2024-11-10 08:45:22.000
+2026-10-21 09:44:31.785   Installing the file.
+2026-10-21 09:44:31.787   Successfully installed the file.
+2026-10-21 09:44:31.787   -- File entry --
+2026-10-21 09:44:31.787   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Win32.Primitives.dll
+2026-10-21 09:44:31.787   Time stamp of our file: 2026-08-20 21:16:28.000
+2026-10-21 09:44:31.787   Installing the file.
+2026-10-21 09:44:31.788   Successfully installed the file.
+2026-10-21 09:44:31.788   -- File entry --
+2026-10-21 09:44:31.788   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Win32.Registry.AccessControl.dll
+2026-10-21 09:44:31.789   Time stamp of our file: 2026-08-22 00:39:12.000
+2026-10-21 09:44:31.789   Installing the file.
+2026-10-21 09:44:31.796   Successfully installed the file.
+2026-10-21 09:44:31.798   -- File entry --
+2026-10-21 09:44:31.798   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Win32.Registry.dll
+2026-10-21 09:44:31.798   Time stamp of our file: 2026-08-20 21:23:38.000
+2026-10-21 09:44:31.798   Installing the file.
+2026-10-21 09:44:31.800   Successfully installed the file.
+2026-10-21 09:44:31.802   -- File entry --
+2026-10-21 09:44:31.802   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\Microsoft.Win32.SystemEvents.dll
+2026-10-21 09:44:31.802   Time stamp of our file: 2026-08-22 00:39:12.000
+2026-10-21 09:44:31.802   Installing the file.
+2026-10-21 09:44:31.804   Successfully installed the file.
+2026-10-21 09:44:31.804   -- File entry --
+2026-10-21 09:44:31.804   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\mscordaccore.dll
+2026-10-21 09:44:31.804   Time stamp of our file: 2026-08-20 21:06:14.000
+2026-10-21 09:44:31.804   Installing the file.
+2026-10-21 09:44:31.837   Successfully installed the file.
+2026-10-21 09:44:31.837   -- File entry --
+2026-10-21 09:44:31.837   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\mscordaccore_amd64_amd64_8.0.3126.42015.dll
+2026-10-21 09:44:31.839   Time stamp of our file: 2026-08-20 21:06:14.000
+2026-10-21 09:44:31.839   Installing the file.
+2026-10-21 09:44:31.852   Successfully installed the file.
+2026-10-21 09:44:31.852   -- File entry --
+2026-10-21 09:44:31.852   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\mscordbi.dll
+2026-10-21 09:44:31.852   Time stamp of our file: 2026-08-20 21:06:04.000
+2026-10-21 09:44:31.852   Installing the file.
+2026-10-21 09:44:31.879   Successfully installed the file.
+2026-10-21 09:44:31.879   -- File entry --
+2026-10-21 09:44:31.879   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\mscorlib.dll
+2026-10-21 09:44:31.879   Time stamp of our file: 2026-08-20 21:18:30.000
+2026-10-21 09:44:31.879   Installing the file.
+2026-10-21 09:44:31.881   Successfully installed the file.
+2026-10-21 09:44:31.881   -- File entry --
+2026-10-21 09:44:31.881   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\mscorrc.dll
+2026-10-21 09:44:31.881   Time stamp of our file: 2026-08-20 21:03:32.000
+2026-10-21 09:44:31.881   Installing the file.
+2026-10-21 09:44:31.884   Successfully installed the file.
+2026-10-21 09:44:31.884   -- File entry --
+2026-10-21 09:44:31.884   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\msquic.dll
+2026-10-21 09:44:31.884   Time stamp of our file: 2026-08-11 21:41:52.000
+2026-10-21 09:44:31.884   Installing the file.
+2026-10-21 09:44:31.899   Successfully installed the file.
+2026-10-21 09:44:31.899   -- File entry --
+2026-10-21 09:44:31.899   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\netstandard.dll
+2026-10-21 09:44:31.899   Time stamp of our file: 2026-08-20 21:18:30.000
+2026-10-21 09:44:31.899   Installing the file.
+2026-10-21 09:44:31.901   Successfully installed the file.
+2026-10-21 09:44:31.901   -- File entry --
+2026-10-21 09:44:31.903   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PenImc_cor3.dll
+2026-10-21 09:44:31.903   Time stamp of our file: 2026-08-21 22:48:44.000
+2026-10-21 09:44:31.903   Installing the file.
+2026-10-21 09:44:31.907   Successfully installed the file.
+2026-10-21 09:44:31.907   -- File entry --
+2026-10-21 09:44:31.907   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationCore.dll
+2026-10-21 09:44:31.907   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:31.907   Installing the file.
+2026-10-21 09:44:32.140   Successfully installed the file.
+2026-10-21 09:44:32.140   -- File entry --
+2026-10-21 09:44:32.140   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework-SystemCore.dll
+2026-10-21 09:44:32.140   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.140   Installing the file.
+2026-10-21 09:44:32.142   Successfully installed the file.
+2026-10-21 09:44:32.142   -- File entry --
+2026-10-21 09:44:32.142   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework-SystemData.dll
+2026-10-21 09:44:32.143   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.143   Installing the file.
+2026-10-21 09:44:32.144   Successfully installed the file.
+2026-10-21 09:44:32.144   -- File entry --
+2026-10-21 09:44:32.144   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework-SystemDrawing.dll
+2026-10-21 09:44:32.144   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.144   Installing the file.
+2026-10-21 09:44:32.146   Successfully installed the file.
+2026-10-21 09:44:32.146   -- File entry --
+2026-10-21 09:44:32.146   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework-SystemXml.dll
+2026-10-21 09:44:32.146   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.146   Installing the file.
+2026-10-21 09:44:32.147   Successfully installed the file.
+2026-10-21 09:44:32.147   -- File entry --
+2026-10-21 09:44:32.147   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework-SystemXmlLinq.dll
+2026-10-21 09:44:32.147   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.147   Installing the file.
+2026-10-21 09:44:32.148   Successfully installed the file.
+2026-10-21 09:44:32.148   -- File entry --
+2026-10-21 09:44:32.148   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.Aero.dll
+2026-10-21 09:44:32.148   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.148   Installing the file.
+2026-10-21 09:44:32.159   Successfully installed the file.
+2026-10-21 09:44:32.159   -- File entry --
+2026-10-21 09:44:32.159   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.Aero2.dll
+2026-10-21 09:44:32.159   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.159   Installing the file.
+2026-10-21 09:44:32.183   Successfully installed the file.
+2026-10-21 09:44:32.183   -- File entry --
+2026-10-21 09:44:32.183   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.AeroLite.dll
+2026-10-21 09:44:32.183   Time stamp of our file: 2026-08-22 00:39:24.000
+2026-10-21 09:44:32.183   Installing the file.
+2026-10-21 09:44:32.188   Successfully installed the file.
+2026-10-21 09:44:32.188   -- File entry --
+2026-10-21 09:44:32.188   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.Classic.dll
+2026-10-21 09:44:32.188   Time stamp of our file: 2026-08-22 00:39:26.000
+2026-10-21 09:44:32.188   Installing the file.
+2026-10-21 09:44:32.193   Successfully installed the file.
+2026-10-21 09:44:32.193   -- File entry --
+2026-10-21 09:44:32.193   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.dll
+2026-10-21 09:44:32.193   Time stamp of our file: 2026-08-22 00:39:30.000
+2026-10-21 09:44:32.193   Installing the file.
+2026-10-21 09:44:32.637   Successfully installed the file.
+2026-10-21 09:44:32.637   -- File entry --
+2026-10-21 09:44:32.637   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.Luna.dll
+2026-10-21 09:44:32.638   Time stamp of our file: 2026-08-22 00:39:26.000
+2026-10-21 09:44:32.638   Installing the file.
+2026-10-21 09:44:32.650   Successfully installed the file.
+2026-10-21 09:44:32.650   -- File entry --
+2026-10-21 09:44:32.650   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationFramework.Royale.dll
+2026-10-21 09:44:32.650   Time stamp of our file: 2026-08-22 00:39:26.000
+2026-10-21 09:44:32.650   Installing the file.
+2026-10-21 09:44:32.656   Successfully installed the file.
+2026-10-21 09:44:32.656   -- File entry --
+2026-10-21 09:44:32.656   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationNative_cor3.dll
+2026-10-21 09:44:32.656   Time stamp of our file: 2026-06-10 06:13:08.000
+2026-10-21 09:44:32.656   Installing the file.
+2026-10-21 09:44:32.690   Successfully installed the file.
+2026-10-21 09:44:32.690   -- File entry --
+2026-10-21 09:44:32.690   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\PresentationUI.dll
+2026-10-21 09:44:32.690   Time stamp of our file: 2026-08-22 00:39:32.000
+2026-10-21 09:44:32.690   Installing the file.
+2026-10-21 09:44:32.725   Successfully installed the file.
+2026-10-21 09:44:32.725   -- File entry --
+2026-10-21 09:44:32.725   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ReachFramework.dll
+2026-10-21 09:44:32.725   Time stamp of our file: 2026-08-22 00:39:32.000
+2026-10-21 09:44:32.725   Installing the file.
+2026-10-21 09:44:32.771   Successfully installed the file.
+2026-10-21 09:44:32.771   -- File entry --
+2026-10-21 09:44:32.771   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.AppContext.dll
+2026-10-21 09:44:32.771   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:32.771   Installing the file.
+2026-10-21 09:44:32.771   Successfully installed the file.
+2026-10-21 09:44:32.771   -- File entry --
+2026-10-21 09:44:32.771   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Buffers.dll
+2026-10-21 09:44:32.771   Time stamp of our file: 2026-08-20 21:17:08.000
+2026-10-21 09:44:32.771   Installing the file.
+2026-10-21 09:44:32.773   Successfully installed the file.
+2026-10-21 09:44:32.773   -- File entry --
+2026-10-21 09:44:32.773   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.CodeDom.dll
+2026-10-21 09:44:32.773   Time stamp of our file: 2026-08-22 00:39:12.000
+2026-10-21 09:44:32.773   Installing the file.
+2026-10-21 09:44:32.789   Successfully installed the file.
+2026-10-21 09:44:32.789   -- File entry --
+2026-10-21 09:44:32.789   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Collections.Concurrent.dll
+2026-10-21 09:44:32.789   Time stamp of our file: 2026-08-20 21:23:42.000
+2026-10-21 09:44:32.789   Installing the file.
+2026-10-21 09:44:32.799   Successfully installed the file.
+2026-10-21 09:44:32.799   -- File entry --
+2026-10-21 09:44:32.799   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Collections.dll
+2026-10-21 09:44:32.799   Time stamp of our file: 2026-08-20 21:23:44.000
+2026-10-21 09:44:32.799   Installing the file.
+2026-10-21 09:44:32.806   Successfully installed the file.
+2026-10-21 09:44:32.806   -- File entry --
+2026-10-21 09:44:32.806   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Collections.Immutable.dll
+2026-10-21 09:44:32.806   Time stamp of our file: 2026-08-20 21:23:48.000
+2026-10-21 09:44:32.806   Installing the file.
+2026-10-21 09:44:32.830   Successfully installed the file.
+2026-10-21 09:44:32.830   -- File entry --
+2026-10-21 09:44:32.830   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Collections.NonGeneric.dll
+2026-10-21 09:44:32.830   Time stamp of our file: 2026-08-20 21:23:50.000
+2026-10-21 09:44:32.830   Installing the file.
+2026-10-21 09:44:32.832   Successfully installed the file.
+2026-10-21 09:44:32.832   -- File entry --
+2026-10-21 09:44:32.832   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Collections.Specialized.dll
+2026-10-21 09:44:32.832   Time stamp of our file: 2026-08-20 21:23:54.000
+2026-10-21 09:44:32.832   Installing the file.
+2026-10-21 09:44:32.836   Successfully installed the file.
+2026-10-21 09:44:32.836   -- File entry --
+2026-10-21 09:44:32.836   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.Annotations.dll
+2026-10-21 09:44:32.836   Time stamp of our file: 2026-08-20 21:23:56.000
+2026-10-21 09:44:32.836   Installing the file.
+2026-10-21 09:44:32.843   Successfully installed the file.
+2026-10-21 09:44:32.843   -- File entry --
+2026-10-21 09:44:32.843   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.DataAnnotations.dll
+2026-10-21 09:44:32.843   Time stamp of our file: 2026-08-20 21:17:28.000
+2026-10-21 09:44:32.843   Installing the file.
+2026-10-21 09:44:32.843   Successfully installed the file.
+2026-10-21 09:44:32.844   -- File entry --
+2026-10-21 09:44:32.844   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.dll
+2026-10-21 09:44:32.844   Time stamp of our file: 2026-08-20 21:24:00.000
+2026-10-21 09:44:32.844   Installing the file.
+2026-10-21 09:44:32.854   Successfully installed the file.
+2026-10-21 09:44:32.854   -- File entry --
+2026-10-21 09:44:32.854   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.EventBasedAsync.dll
+2026-10-21 09:44:32.854   Time stamp of our file: 2026-08-20 21:24:02.000
+2026-10-21 09:44:32.854   Installing the file.
+2026-10-21 09:44:32.855   Successfully installed the file.
+2026-10-21 09:44:32.855   -- File entry --
+2026-10-21 09:44:32.855   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.Primitives.dll
+2026-10-21 09:44:32.856   Time stamp of our file: 2026-08-20 21:24:04.000
+2026-10-21 09:44:32.856   Installing the file.
+2026-10-21 09:44:32.858   Successfully installed the file.
+2026-10-21 09:44:32.858   -- File entry --
+2026-10-21 09:44:32.858   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ComponentModel.TypeConverter.dll
+2026-10-21 09:44:32.858   Time stamp of our file: 2026-08-20 21:24:08.000
+2026-10-21 09:44:32.858   Installing the file.
+2026-10-21 09:44:32.881   Successfully installed the file.
+2026-10-21 09:44:32.881   -- File entry --
+2026-10-21 09:44:32.881   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Configuration.ConfigurationManager.dll
+2026-10-21 09:44:32.881   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:32.881   Installing the file.
+2026-10-21 09:44:32.911   Successfully installed the file.
+2026-10-21 09:44:32.911   -- File entry --
+2026-10-21 09:44:32.911   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Configuration.dll
+2026-10-21 09:44:32.911   Time stamp of our file: 2026-08-20 21:17:26.000
+2026-10-21 09:44:32.911   Installing the file.
+2026-10-21 09:44:32.913   Successfully installed the file.
+2026-10-21 09:44:32.913   -- File entry --
+2026-10-21 09:44:32.913   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Console.dll
+2026-10-21 09:44:32.913   Time stamp of our file: 2026-08-20 21:24:10.000
+2026-10-21 09:44:32.913   Installing the file.
+2026-10-21 09:44:32.919   Successfully installed the file.
+2026-10-21 09:44:32.919   -- File entry --
+2026-10-21 09:44:32.919   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Core.dll
+2026-10-21 09:44:32.919   Time stamp of our file: 2026-08-20 21:18:28.000
+2026-10-21 09:44:32.919   Installing the file.
+2026-10-21 09:44:32.920   Successfully installed the file.
+2026-10-21 09:44:32.920   -- File entry --
+2026-10-21 09:44:32.920   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Data.Common.dll
+2026-10-21 09:44:32.920   Time stamp of our file: 2026-08-20 21:24:14.000
+2026-10-21 09:44:32.920   Installing the file.
+2026-10-21 09:44:33.000   Successfully installed the file.
+2026-10-21 09:44:33.000   -- File entry --
+2026-10-21 09:44:33.002   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Data.DataSetExtensions.dll
+2026-10-21 09:44:33.002   Time stamp of our file: 2026-08-20 21:18:16.000
+2026-10-21 09:44:33.002   Installing the file.
+2026-10-21 09:44:33.002   Successfully installed the file.
+2026-10-21 09:44:33.002   -- File entry --
+2026-10-21 09:44:33.002   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Data.dll
+2026-10-21 09:44:33.002   Time stamp of our file: 2026-08-20 21:18:22.000
+2026-10-21 09:44:33.002   Installing the file.
+2026-10-21 09:44:33.004   Successfully installed the file.
+2026-10-21 09:44:33.004   -- File entry --
+2026-10-21 09:44:33.004   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Design.dll
+2026-10-21 09:44:33.004   Time stamp of our file: 2026-08-21 21:57:08.000
+2026-10-21 09:44:33.004   Installing the file.
+2026-10-21 09:44:33.004   Successfully installed the file.
+2026-10-21 09:44:33.004   -- File entry --
+2026-10-21 09:44:33.004   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.Contracts.dll
+2026-10-21 09:44:33.004   Time stamp of our file: 2026-08-20 21:16:28.000
+2026-10-21 09:44:33.004   Installing the file.
+2026-10-21 09:44:33.006   Successfully installed the file.
+2026-10-21 09:44:33.006   -- File entry --
+2026-10-21 09:44:33.006   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.Debug.dll
+2026-10-21 09:44:33.006   Time stamp of our file: 2026-08-20 21:17:10.000
+2026-10-21 09:44:33.006   Installing the file.
+2026-10-21 09:44:33.006   Successfully installed the file.
+2026-10-21 09:44:33.006   -- File entry --
+2026-10-21 09:44:33.006   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.DiagnosticSource.dll
+2026-10-21 09:44:33.006   Time stamp of our file: 2026-08-20 21:24:18.000
+2026-10-21 09:44:33.006   Installing the file.
+2026-10-21 09:44:33.020   Successfully installed the file.
+2026-10-21 09:44:33.020   -- File entry --
+2026-10-21 09:44:33.020   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.EventLog.dll
+2026-10-21 09:44:33.021   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:33.021   Installing the file.
+2026-10-21 09:44:33.031   Successfully installed the file.
+2026-10-21 09:44:33.031   -- File entry --
+2026-10-21 09:44:33.031   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.EventLog.Messages.dll
+2026-10-21 09:44:33.031   Time stamp of our file: 2026-08-20 21:02:44.000
+2026-10-21 09:44:33.031   Installing the file.
+2026-10-21 09:44:33.123   Successfully installed the file.
+2026-10-21 09:44:33.125   -- File entry --
+2026-10-21 09:44:33.125   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.FileVersionInfo.dll
+2026-10-21 09:44:33.125   Time stamp of our file: 2026-08-20 21:24:20.000
+2026-10-21 09:44:33.125   Installing the file.
+2026-10-21 09:44:33.125   Successfully installed the file.
+2026-10-21 09:44:33.127   -- File entry --
+2026-10-21 09:44:33.127   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.PerformanceCounter.dll
+2026-10-21 09:44:33.127   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:33.127   Installing the file.
+2026-10-21 09:44:33.135   Successfully installed the file.
+2026-10-21 09:44:33.135   -- File entry --
+2026-10-21 09:44:33.135   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.Process.dll
+2026-10-21 09:44:33.135   Time stamp of our file: 2026-08-20 21:24:24.000
+2026-10-21 09:44:33.135   Installing the file.
+2026-10-21 09:44:33.145   Successfully installed the file.
+2026-10-21 09:44:33.145   -- File entry --
+2026-10-21 09:44:33.145   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.StackTrace.dll
+2026-10-21 09:44:33.145   Time stamp of our file: 2026-08-20 21:24:26.000
+2026-10-21 09:44:33.145   Installing the file.
+2026-10-21 09:44:33.147   Successfully installed the file.
+2026-10-21 09:44:33.147   -- File entry --
+2026-10-21 09:44:33.147   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.TextWriterTraceListener.dll
+2026-10-21 09:44:33.147   Time stamp of our file: 2026-08-20 21:24:30.000
+2026-10-21 09:44:33.147   Installing the file.
+2026-10-21 09:44:33.149   Successfully installed the file.
+2026-10-21 09:44:33.149   -- File entry --
+2026-10-21 09:44:33.149   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.Tools.dll
+2026-10-21 09:44:33.149   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:33.149   Installing the file.
+2026-10-21 09:44:33.151   Successfully installed the file.
+2026-10-21 09:44:33.151   -- File entry --
+2026-10-21 09:44:33.151   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.TraceSource.dll
+2026-10-21 09:44:33.151   Time stamp of our file: 2026-08-20 21:24:32.000
+2026-10-21 09:44:33.151   Installing the file.
+2026-10-21 09:44:33.155   Successfully installed the file.
+2026-10-21 09:44:33.155   -- File entry --
+2026-10-21 09:44:33.155   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Diagnostics.Tracing.dll
+2026-10-21 09:44:33.155   Time stamp of our file: 2026-08-20 21:17:24.000
+2026-10-21 09:44:33.155   Installing the file.
+2026-10-21 09:44:33.155   Successfully installed the file.
+2026-10-21 09:44:33.157   -- File entry --
+2026-10-21 09:44:33.157   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.DirectoryServices.dll
+2026-10-21 09:44:33.157   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:33.157   Installing the file.
+2026-10-21 09:44:33.186   Successfully installed the file.
+2026-10-21 09:44:33.186   -- File entry --
+2026-10-21 09:44:33.186   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.dll
+2026-10-21 09:44:33.186   Time stamp of our file: 2026-08-20 21:18:30.000
+2026-10-21 09:44:33.186   Installing the file.
+2026-10-21 09:44:33.186   Successfully installed the file.
+2026-10-21 09:44:33.186   -- File entry --
+2026-10-21 09:44:33.188   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Drawing.Common.dll
+2026-10-21 09:44:33.188   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:33.188   Installing the file.
+2026-10-21 09:44:33.224   Successfully installed the file.
+2026-10-21 09:44:33.224   -- File entry --
+2026-10-21 09:44:33.224   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Drawing.Design.dll
+2026-10-21 09:44:33.224   Time stamp of our file: 2026-08-21 21:57:08.000
+2026-10-21 09:44:33.224   Installing the file.
+2026-10-21 09:44:33.226   Successfully installed the file.
+2026-10-21 09:44:33.226   -- File entry --
+2026-10-21 09:44:33.226   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Drawing.dll
+2026-10-21 09:44:33.226   Time stamp of our file: 2026-08-21 21:57:08.000
+2026-10-21 09:44:33.226   Installing the file.
+2026-10-21 09:44:33.234   Successfully installed the file.
+2026-10-21 09:44:33.234   -- File entry --
+2026-10-21 09:44:33.234   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Drawing.Primitives.dll
+2026-10-21 09:44:33.234   Time stamp of our file: 2026-08-20 21:24:36.000
+2026-10-21 09:44:33.234   Installing the file.
+2026-10-21 09:44:33.238   Successfully installed the file.
+2026-10-21 09:44:33.238   -- File entry --
+2026-10-21 09:44:33.238   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Dynamic.Runtime.dll
+2026-10-21 09:44:33.238   Time stamp of our file: 2026-08-20 21:17:28.000
+2026-10-21 09:44:33.238   Installing the file.
+2026-10-21 09:44:33.238   Successfully installed the file.
+2026-10-21 09:44:33.238   -- File entry --
+2026-10-21 09:44:33.240   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Formats.Asn1.dll
+2026-10-21 09:44:33.240   Time stamp of our file: 2026-08-20 21:24:38.000
+2026-10-21 09:44:33.240   Installing the file.
+2026-10-21 09:44:33.245   Successfully installed the file.
+2026-10-21 09:44:33.245   -- File entry --
+2026-10-21 09:44:33.245   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Formats.Tar.dll
+2026-10-21 09:44:33.247   Time stamp of our file: 2026-08-20 21:24:42.000
+2026-10-21 09:44:33.247   Installing the file.
+2026-10-21 09:44:33.256   Successfully installed the file.
+2026-10-21 09:44:33.256   -- File entry --
+2026-10-21 09:44:33.256   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Globalization.Calendars.dll
+2026-10-21 09:44:33.256   Time stamp of our file: 2026-08-20 21:17:10.000
+2026-10-21 09:44:33.256   Installing the file.
+2026-10-21 09:44:33.256   Successfully installed the file.
+2026-10-21 09:44:33.256   -- File entry --
+2026-10-21 09:44:33.256   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Globalization.dll
+2026-10-21 09:44:33.256   Time stamp of our file: 2026-08-20 21:16:44.000
+2026-10-21 09:44:33.256   Installing the file.
+2026-10-21 09:44:33.258   Successfully installed the file.
+2026-10-21 09:44:33.258   -- File entry --
+2026-10-21 09:44:33.258   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Globalization.Extensions.dll
+2026-10-21 09:44:33.258   Time stamp of our file: 2026-08-20 21:17:12.000
+2026-10-21 09:44:33.258   Installing the file.
+2026-10-21 09:44:33.258   Successfully installed the file.
+2026-10-21 09:44:33.258   -- File entry --
+2026-10-21 09:44:33.258   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Compression.Brotli.dll
+2026-10-21 09:44:33.258   Time stamp of our file: 2026-08-20 21:24:44.000
+2026-10-21 09:44:33.258   Installing the file.
+2026-10-21 09:44:33.261   Successfully installed the file.
+2026-10-21 09:44:33.261   -- File entry --
+2026-10-21 09:44:33.261   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Compression.dll
+2026-10-21 09:44:33.261   Time stamp of our file: 2026-08-20 21:24:48.000
+2026-10-21 09:44:33.261   Installing the file.
+2026-10-21 09:44:33.269   Successfully installed the file.
+2026-10-21 09:44:33.269   -- File entry --
+2026-10-21 09:44:33.269   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Compression.FileSystem.dll
+2026-10-21 09:44:33.269   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:33.269   Installing the file.
+2026-10-21 09:44:33.269   Successfully installed the file.
+2026-10-21 09:44:33.269   -- File entry --
+2026-10-21 09:44:33.271   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Compression.Native.dll
+2026-10-21 09:44:33.271   Time stamp of our file: 2026-08-20 21:14:02.000
+2026-10-21 09:44:33.271   Installing the file.
+2026-10-21 09:44:33.295   Successfully installed the file.
+2026-10-21 09:44:33.295   -- File entry --
+2026-10-21 09:44:33.295   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Compression.ZipFile.dll
+2026-10-21 09:44:33.295   Time stamp of our file: 2026-08-20 21:24:50.000
+2026-10-21 09:44:33.295   Installing the file.
+2026-10-21 09:44:33.297   Successfully installed the file.
+2026-10-21 09:44:33.297   -- File entry --
+2026-10-21 09:44:33.297   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.dll
+2026-10-21 09:44:33.297   Time stamp of our file: 2026-08-20 21:17:08.000
+2026-10-21 09:44:33.297   Installing the file.
+2026-10-21 09:44:33.297   Successfully installed the file.
+2026-10-21 09:44:33.297   -- File entry --
+2026-10-21 09:44:33.297   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.FileSystem.AccessControl.dll
+2026-10-21 09:44:33.297   Time stamp of our file: 2026-08-20 21:24:54.000
+2026-10-21 09:44:33.297   Installing the file.
+2026-10-21 09:44:33.301   Successfully installed the file.
+2026-10-21 09:44:33.301   -- File entry --
+2026-10-21 09:44:33.301   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.FileSystem.dll
+2026-10-21 09:44:33.301   Time stamp of our file: 2026-08-20 21:17:12.000
+2026-10-21 09:44:33.301   Installing the file.
+2026-10-21 09:44:33.311   Successfully installed the file.
+2026-10-21 09:44:33.311   -- File entry --
+2026-10-21 09:44:33.311   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.FileSystem.DriveInfo.dll
+2026-10-21 09:44:33.311   Time stamp of our file: 2026-08-20 21:24:56.000
+2026-10-21 09:44:33.311   Installing the file.
+2026-10-21 09:44:33.313   Successfully installed the file.
+2026-10-21 09:44:33.313   -- File entry --
+2026-10-21 09:44:33.313   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.FileSystem.Primitives.dll
+2026-10-21 09:44:33.313   Time stamp of our file: 2026-08-20 21:17:10.000
+2026-10-21 09:44:33.313   Installing the file.
+2026-10-21 09:44:33.313   Successfully installed the file.
+2026-10-21 09:44:33.313   -- File entry --
+2026-10-21 09:44:33.313   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.FileSystem.Watcher.dll
+2026-10-21 09:44:33.313   Time stamp of our file: 2026-08-20 21:25:00.000
+2026-10-21 09:44:33.313   Installing the file.
+2026-10-21 09:44:33.317   Successfully installed the file.
+2026-10-21 09:44:33.317   -- File entry --
+2026-10-21 09:44:33.317   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.IsolatedStorage.dll
+2026-10-21 09:44:33.317   Time stamp of our file: 2026-08-20 21:25:02.000
+2026-10-21 09:44:33.317   Installing the file.
+2026-10-21 09:44:33.319   Successfully installed the file.
+2026-10-21 09:44:33.319   -- File entry --
+2026-10-21 09:44:33.319   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.MemoryMappedFiles.dll
+2026-10-21 09:44:33.319   Time stamp of our file: 2026-08-20 21:25:06.000
+2026-10-21 09:44:33.319   Installing the file.
+2026-10-21 09:44:33.323   Successfully installed the file.
+2026-10-21 09:44:33.323   -- File entry --
+2026-10-21 09:44:33.323   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Packaging.dll
+2026-10-21 09:44:33.323   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:33.323   Installing the file.
+2026-10-21 09:44:33.331   Successfully installed the file.
+2026-10-21 09:44:33.331   -- File entry --
+2026-10-21 09:44:33.331   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Pipes.AccessControl.dll
+2026-10-21 09:44:33.331   Time stamp of our file: 2026-08-20 21:15:32.000
+2026-10-21 09:44:33.331   Installing the file.
+2026-10-21 09:44:33.331   Successfully installed the file.
+2026-10-21 09:44:33.331   -- File entry --
+2026-10-21 09:44:33.331   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.Pipes.dll
+2026-10-21 09:44:33.331   Time stamp of our file: 2026-08-20 21:25:08.000
+2026-10-21 09:44:33.331   Installing the file.
+2026-10-21 09:44:33.337   Successfully installed the file.
+2026-10-21 09:44:33.337   -- File entry --
+2026-10-21 09:44:33.337   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.IO.UnmanagedMemoryStream.dll
+2026-10-21 09:44:33.337   Time stamp of our file: 2026-08-20 21:18:18.000
+2026-10-21 09:44:33.337   Installing the file.
+2026-10-21 09:44:33.338   Successfully installed the file.
+2026-10-21 09:44:33.338   -- File entry --
+2026-10-21 09:44:33.338   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Linq.dll
+2026-10-21 09:44:33.338   Time stamp of our file: 2026-08-20 21:25:12.000
+2026-10-21 09:44:33.338   Installing the file.
+2026-10-21 09:44:33.353   Successfully installed the file.
+2026-10-21 09:44:33.353   -- File entry --
+2026-10-21 09:44:33.353   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Linq.Expressions.dll
+2026-10-21 09:44:33.353   Time stamp of our file: 2026-08-20 21:25:16.000
+2026-10-21 09:44:33.353   Installing the file.
+2026-10-21 09:44:33.434   Successfully installed the file.
+2026-10-21 09:44:33.434   -- File entry --
+2026-10-21 09:44:33.434   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Linq.Parallel.dll
+2026-10-21 09:44:33.436   Time stamp of our file: 2026-08-20 21:25:20.000
+2026-10-21 09:44:33.436   Installing the file.
+2026-10-21 09:44:33.455   Successfully installed the file.
+2026-10-21 09:44:33.455   -- File entry --
+2026-10-21 09:44:33.455   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Linq.Queryable.dll
+2026-10-21 09:44:33.455   Time stamp of our file: 2026-08-20 21:25:24.000
+2026-10-21 09:44:33.455   Installing the file.
+2026-10-21 09:44:33.460   Successfully installed the file.
+2026-10-21 09:44:33.462   -- File entry --
+2026-10-21 09:44:33.462   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Memory.dll
+2026-10-21 09:44:33.462   Time stamp of our file: 2026-08-20 21:25:26.000
+2026-10-21 09:44:33.462   Installing the file.
+2026-10-21 09:44:33.465   Successfully installed the file.
+2026-10-21 09:44:33.465   -- File entry --
+2026-10-21 09:44:33.465   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.dll
+2026-10-21 09:44:33.465   Time stamp of our file: 2026-08-20 21:18:08.000
+2026-10-21 09:44:33.465   Installing the file.
+2026-10-21 09:44:33.467   Successfully installed the file.
+2026-10-21 09:44:33.467   -- File entry --
+2026-10-21 09:44:33.467   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Http.dll
+2026-10-21 09:44:33.467   Time stamp of our file: 2026-08-20 21:25:30.000
+2026-10-21 09:44:33.467   Installing the file.
+2026-10-21 09:44:33.518   Successfully installed the file.
+2026-10-21 09:44:33.518   -- File entry --
+2026-10-21 09:44:33.518   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Http.Json.dll
+2026-10-21 09:44:33.518   Time stamp of our file: 2026-08-20 21:25:34.000
+2026-10-21 09:44:33.518   Installing the file.
+2026-10-21 09:44:33.522   Successfully installed the file.
+2026-10-21 09:44:33.522   -- File entry --
+2026-10-21 09:44:33.522   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.HttpListener.dll
+2026-10-21 09:44:33.522   Time stamp of our file: 2026-08-20 21:25:36.000
+2026-10-21 09:44:33.522   Installing the file.
+2026-10-21 09:44:33.538   Successfully installed the file.
+2026-10-21 09:44:33.538   -- File entry --
+2026-10-21 09:44:33.538   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Mail.dll
+2026-10-21 09:44:33.539   Time stamp of our file: 2026-08-20 21:25:40.000
+2026-10-21 09:44:33.539   Installing the file.
+2026-10-21 09:44:33.551   Successfully installed the file.
+2026-10-21 09:44:33.551   -- File entry --
+2026-10-21 09:44:33.551   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.NameResolution.dll
+2026-10-21 09:44:33.551   Time stamp of our file: 2026-08-20 21:25:42.000
+2026-10-21 09:44:33.551   Installing the file.
+2026-10-21 09:44:33.555   Successfully installed the file.
+2026-10-21 09:44:33.555   -- File entry --
+2026-10-21 09:44:33.555   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.NetworkInformation.dll
+2026-10-21 09:44:33.555   Time stamp of our file: 2026-08-20 21:25:46.000
+2026-10-21 09:44:33.555   Installing the file.
+2026-10-21 09:44:33.560   Successfully installed the file.
+2026-10-21 09:44:33.560   -- File entry --
+2026-10-21 09:44:33.560   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Ping.dll
+2026-10-21 09:44:33.561   Time stamp of our file: 2026-08-20 21:25:48.000
+2026-10-21 09:44:33.561   Installing the file.
+2026-10-21 09:44:33.563   Successfully installed the file.
+2026-10-21 09:44:33.563   -- File entry --
+2026-10-21 09:44:33.563   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Primitives.dll
+2026-10-21 09:44:33.563   Time stamp of our file: 2026-08-20 21:25:52.000
+2026-10-21 09:44:33.563   Installing the file.
+2026-10-21 09:44:33.571   Successfully installed the file.
+2026-10-21 09:44:33.571   -- File entry --
+2026-10-21 09:44:33.571   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Quic.dll
+2026-10-21 09:44:33.571   Time stamp of our file: 2026-08-20 21:25:54.000
+2026-10-21 09:44:33.571   Installing the file.
+2026-10-21 09:44:33.579   Successfully installed the file.
+2026-10-21 09:44:33.579   -- File entry --
+2026-10-21 09:44:33.579   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Requests.dll
+2026-10-21 09:44:33.579   Time stamp of our file: 2026-08-20 21:25:58.000
+2026-10-21 09:44:33.579   Installing the file.
+2026-10-21 09:44:33.589   Successfully installed the file.
+2026-10-21 09:44:33.589   -- File entry --
+2026-10-21 09:44:33.589   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Security.dll
+2026-10-21 09:44:33.589   Time stamp of our file: 2026-08-20 21:26:00.000
+2026-10-21 09:44:33.589   Installing the file.
+2026-10-21 09:44:33.608   Successfully installed the file.
+2026-10-21 09:44:33.608   -- File entry --
+2026-10-21 09:44:33.608   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.ServicePoint.dll
+2026-10-21 09:44:33.608   Time stamp of our file: 2026-08-20 21:26:04.000
+2026-10-21 09:44:33.608   Installing the file.
+2026-10-21 09:44:33.609   Successfully installed the file.
+2026-10-21 09:44:33.609   -- File entry --
+2026-10-21 09:44:33.609   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.Sockets.dll
+2026-10-21 09:44:33.609   Time stamp of our file: 2026-08-20 21:26:06.000
+2026-10-21 09:44:33.609   Installing the file.
+2026-10-21 09:44:33.625   Successfully installed the file.
+2026-10-21 09:44:33.625   -- File entry --
+2026-10-21 09:44:33.625   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.WebClient.dll
+2026-10-21 09:44:33.625   Time stamp of our file: 2026-08-20 21:26:10.000
+2026-10-21 09:44:33.625   Installing the file.
+2026-10-21 09:44:33.631   Successfully installed the file.
+2026-10-21 09:44:33.631   -- File entry --
+2026-10-21 09:44:33.631   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.WebHeaderCollection.dll
+2026-10-21 09:44:33.631   Time stamp of our file: 2026-08-20 21:26:12.000
+2026-10-21 09:44:33.631   Installing the file.
+2026-10-21 09:44:33.633   Successfully installed the file.
+2026-10-21 09:44:33.633   -- File entry --
+2026-10-21 09:44:33.633   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.WebProxy.dll
+2026-10-21 09:44:33.633   Time stamp of our file: 2026-08-20 21:26:14.000
+2026-10-21 09:44:33.633   Installing the file.
+2026-10-21 09:44:33.635   Successfully installed the file.
+2026-10-21 09:44:33.635   -- File entry --
+2026-10-21 09:44:33.635   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.WebSockets.Client.dll
+2026-10-21 09:44:33.635   Time stamp of our file: 2026-08-20 21:26:18.000
+2026-10-21 09:44:33.635   Installing the file.
+2026-10-21 09:44:33.637   Successfully installed the file.
+2026-10-21 09:44:33.637   -- File entry --
+2026-10-21 09:44:33.638   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Net.WebSockets.dll
+2026-10-21 09:44:33.638   Time stamp of our file: 2026-08-20 21:26:20.000
+2026-10-21 09:44:33.638   Installing the file.
+2026-10-21 09:44:33.644   Successfully installed the file.
+2026-10-21 09:44:33.644   -- File entry --
+2026-10-21 09:44:33.644   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Numerics.dll
+2026-10-21 09:44:33.645   Time stamp of our file: 2026-08-20 21:17:42.000
+2026-10-21 09:44:33.645   Installing the file.
+2026-10-21 09:44:33.645   Successfully installed the file.
+2026-10-21 09:44:33.645   -- File entry --
+2026-10-21 09:44:33.645   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Numerics.Vectors.dll
+2026-10-21 09:44:33.645   Time stamp of our file: 2026-08-20 21:17:40.000
+2026-10-21 09:44:33.645   Installing the file.
+2026-10-21 09:44:33.647   Successfully installed the file.
+2026-10-21 09:44:33.647   -- File entry --
+2026-10-21 09:44:33.647   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ObjectModel.dll
+2026-10-21 09:44:33.647   Time stamp of our file: 2026-08-20 21:26:24.000
+2026-10-21 09:44:33.647   Installing the file.
+2026-10-21 09:44:33.649   Successfully installed the file.
+2026-10-21 09:44:33.649   -- File entry --
+2026-10-21 09:44:33.649   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Printing.dll
+2026-10-21 09:44:33.649   Time stamp of our file: 2026-08-22 00:39:32.000
+2026-10-21 09:44:33.649   Installing the file.
+2026-10-21 09:44:33.676   Successfully installed the file.
+2026-10-21 09:44:33.676   -- File entry --
+2026-10-21 09:44:33.676   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Private.CoreLib.dll
+2026-10-21 09:44:33.676   Time stamp of our file: 2026-08-20 21:10:50.000
+2026-10-21 09:44:33.676   Installing the file.
+2026-10-21 09:44:34.019   Successfully installed the file.
+2026-10-21 09:44:34.019   -- File entry --
+2026-10-21 09:44:34.019   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Private.DataContractSerialization.dll
+2026-10-21 09:44:34.019   Time stamp of our file: 2026-08-20 21:26:28.000
+2026-10-21 09:44:34.019   Installing the file.
+2026-10-21 09:44:34.077   Successfully installed the file.
+2026-10-21 09:44:34.077   -- File entry --
+2026-10-21 09:44:34.077   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Private.Uri.dll
+2026-10-21 09:44:34.077   Time stamp of our file: 2026-08-20 21:26:30.000
+2026-10-21 09:44:34.077   Installing the file.
+2026-10-21 09:44:34.087   Successfully installed the file.
+2026-10-21 09:44:34.087   -- File entry --
+2026-10-21 09:44:34.087   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Private.Xml.dll
+2026-10-21 09:44:34.087   Time stamp of our file: 2026-08-20 21:26:36.000
+2026-10-21 09:44:34.087   Installing the file.
+2026-10-21 09:44:34.309   Successfully installed the file.
+2026-10-21 09:44:34.309   -- File entry --
+2026-10-21 09:44:34.309   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Private.Xml.Linq.dll
+2026-10-21 09:44:34.309   Time stamp of our file: 2026-08-20 21:26:38.000
+2026-10-21 09:44:34.309   Installing the file.
+2026-10-21 09:44:34.321   Successfully installed the file.
+2026-10-21 09:44:34.321   -- File entry --
+2026-10-21 09:44:34.322   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.DispatchProxy.dll
+2026-10-21 09:44:34.322   Time stamp of our file: 2026-08-20 21:26:42.000
+2026-10-21 09:44:34.322   Installing the file.
+2026-10-21 09:44:34.324   Successfully installed the file.
+2026-10-21 09:44:34.324   -- File entry --
+2026-10-21 09:44:34.324   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.dll
+2026-10-21 09:44:34.324   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.324   Installing the file.
+2026-10-21 09:44:34.325   Successfully installed the file.
+2026-10-21 09:44:34.325   -- File entry --
+2026-10-21 09:44:34.325   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Emit.dll
+2026-10-21 09:44:34.326   Time stamp of our file: 2026-08-20 21:26:44.000
+2026-10-21 09:44:34.326   Installing the file.
+2026-10-21 09:44:34.330   Successfully installed the file.
+2026-10-21 09:44:34.330   -- File entry --
+2026-10-21 09:44:34.330   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Emit.ILGeneration.dll
+2026-10-21 09:44:34.330   Time stamp of our file: 2026-08-20 21:17:30.000
+2026-10-21 09:44:34.330   Installing the file.
+2026-10-21 09:44:34.340   Successfully installed the file.
+2026-10-21 09:44:34.340   -- File entry --
+2026-10-21 09:44:34.340   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Emit.Lightweight.dll
+2026-10-21 09:44:34.340   Time stamp of our file: 2026-08-20 21:17:34.000
+2026-10-21 09:44:34.340   Installing the file.
+2026-10-21 09:44:34.342   Successfully installed the file.
+2026-10-21 09:44:34.342   -- File entry --
+2026-10-21 09:44:34.342   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Extensions.dll
+2026-10-21 09:44:34.342   Time stamp of our file: 2026-08-20 21:17:12.000
+2026-10-21 09:44:34.342   Installing the file.
+2026-10-21 09:44:34.342   Successfully installed the file.
+2026-10-21 09:44:34.342   -- File entry --
+2026-10-21 09:44:34.342   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Metadata.dll
+2026-10-21 09:44:34.343   Time stamp of our file: 2026-08-20 21:26:48.000
+2026-10-21 09:44:34.343   Installing the file.
+2026-10-21 09:44:34.424   Successfully installed the file.
+2026-10-21 09:44:34.424   -- File entry --
+2026-10-21 09:44:34.424   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.Primitives.dll
+2026-10-21 09:44:34.424   Time stamp of our file: 2026-08-20 21:17:32.000
+2026-10-21 09:44:34.424   Installing the file.
+2026-10-21 09:44:34.425   Successfully installed the file.
+2026-10-21 09:44:34.425   -- File entry --
+2026-10-21 09:44:34.425   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Reflection.TypeExtensions.dll
+2026-10-21 09:44:34.425   Time stamp of our file: 2026-08-20 21:26:50.000
+2026-10-21 09:44:34.425   Installing the file.
+2026-10-21 09:44:34.426   Successfully installed the file.
+2026-10-21 09:44:34.426   -- File entry --
+2026-10-21 09:44:34.426   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Resources.Extensions.dll
+2026-10-21 09:44:34.426   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:34.426   Installing the file.
+2026-10-21 09:44:34.430   Successfully installed the file.
+2026-10-21 09:44:34.430   -- File entry --
+2026-10-21 09:44:34.430   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Resources.Reader.dll
+2026-10-21 09:44:34.430   Time stamp of our file: 2026-08-20 21:17:12.000
+2026-10-21 09:44:34.430   Installing the file.
+2026-10-21 09:44:34.432   Successfully installed the file.
+2026-10-21 09:44:34.432   -- File entry --
+2026-10-21 09:44:34.432   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Resources.ResourceManager.dll
+2026-10-21 09:44:34.432   Time stamp of our file: 2026-08-20 21:17:08.000
+2026-10-21 09:44:34.432   Installing the file.
+2026-10-21 09:44:34.432   Successfully installed the file.
+2026-10-21 09:44:34.432   -- File entry --
+2026-10-21 09:44:34.432   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Resources.Writer.dll
+2026-10-21 09:44:34.434   Time stamp of our file: 2026-08-20 21:26:54.000
+2026-10-21 09:44:34.434   Installing the file.
+2026-10-21 09:44:34.435   Successfully installed the file.
+2026-10-21 09:44:34.435   -- File entry --
+2026-10-21 09:44:34.435   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.CompilerServices.Unsafe.dll
+2026-10-21 09:44:34.436   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.436   Installing the file.
+2026-10-21 09:44:34.437   Successfully installed the file.
+2026-10-21 09:44:34.437   -- File entry --
+2026-10-21 09:44:34.437   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.CompilerServices.VisualC.dll
+2026-10-21 09:44:34.437   Time stamp of our file: 2026-08-20 21:26:56.000
+2026-10-21 09:44:34.437   Installing the file.
+2026-10-21 09:44:34.438   Successfully installed the file.
+2026-10-21 09:44:34.439   -- File entry --
+2026-10-21 09:44:34.439   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.dll
+2026-10-21 09:44:34.439   Time stamp of our file: 2026-08-20 21:16:36.000
+2026-10-21 09:44:34.439   Installing the file.
+2026-10-21 09:44:34.440   Successfully installed the file.
+2026-10-21 09:44:34.440   -- File entry --
+2026-10-21 09:44:34.441   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Extensions.dll
+2026-10-21 09:44:34.441   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.441   Installing the file.
+2026-10-21 09:44:34.441   Successfully installed the file.
+2026-10-21 09:44:34.441   -- File entry --
+2026-10-21 09:44:34.442   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Handles.dll
+2026-10-21 09:44:34.442   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.442   Installing the file.
+2026-10-21 09:44:34.443   Successfully installed the file.
+2026-10-21 09:44:34.443   -- File entry --
+2026-10-21 09:44:34.443   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.InteropServices.dll
+2026-10-21 09:44:34.443   Time stamp of our file: 2026-08-20 21:27:00.000
+2026-10-21 09:44:34.443   Installing the file.
+2026-10-21 09:44:34.446   Successfully installed the file.
+2026-10-21 09:44:34.446   -- File entry --
+2026-10-21 09:44:34.446   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.InteropServices.JavaScript.dll
+2026-10-21 09:44:34.446   Time stamp of our file: 2026-08-20 21:27:02.000
+2026-10-21 09:44:34.446   Installing the file.
+2026-10-21 09:44:34.448   Successfully installed the file.
+2026-10-21 09:44:34.448   -- File entry --
+2026-10-21 09:44:34.448   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.InteropServices.RuntimeInformation.dll
+2026-10-21 09:44:34.448   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.448   Installing the file.
+2026-10-21 09:44:34.448   Successfully installed the file.
+2026-10-21 09:44:34.448   -- File entry --
+2026-10-21 09:44:34.448   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Intrinsics.dll
+2026-10-21 09:44:34.448   Time stamp of our file: 2026-08-20 21:17:48.000
+2026-10-21 09:44:34.448   Installing the file.
+2026-10-21 09:44:34.458   Successfully installed the file.
+2026-10-21 09:44:34.458   -- File entry --
+2026-10-21 09:44:34.458   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Loader.dll
+2026-10-21 09:44:34.460   Time stamp of our file: 2026-08-20 21:17:28.000
+2026-10-21 09:44:34.460   Installing the file.
+2026-10-21 09:44:34.594   Successfully installed the file.
+2026-10-21 09:44:34.594   -- File entry --
+2026-10-21 09:44:34.594   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Numerics.dll
+2026-10-21 09:44:34.594   Time stamp of our file: 2026-08-20 21:27:06.000
+2026-10-21 09:44:34.594   Installing the file.
+2026-10-21 09:44:34.606   Successfully installed the file.
+2026-10-21 09:44:34.606   -- File entry --
+2026-10-21 09:44:34.606   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Serialization.dll
+2026-10-21 09:44:34.606   Time stamp of our file: 2026-08-20 21:17:54.000
+2026-10-21 09:44:34.606   Installing the file.
+2026-10-21 09:44:34.606   Successfully installed the file.
+2026-10-21 09:44:34.606   -- File entry --
+2026-10-21 09:44:34.606   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Serialization.Formatters.dll
+2026-10-21 09:44:34.606   Time stamp of our file: 2026-08-20 21:27:08.000
+2026-10-21 09:44:34.606   Installing the file.
+2026-10-21 09:44:34.616   Successfully installed the file.
+2026-10-21 09:44:34.616   -- File entry --
+2026-10-21 09:44:34.616   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Serialization.Json.dll
+2026-10-21 09:44:34.616   Time stamp of our file: 2026-08-20 21:17:18.000
+2026-10-21 09:44:34.616   Installing the file.
+2026-10-21 09:44:34.618   Successfully installed the file.
+2026-10-21 09:44:34.618   -- File entry --
+2026-10-21 09:44:34.618   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Serialization.Primitives.dll
+2026-10-21 09:44:34.618   Time stamp of our file: 2026-08-20 21:27:12.000
+2026-10-21 09:44:34.618   Installing the file.
+2026-10-21 09:44:34.618   Successfully installed the file.
+2026-10-21 09:44:34.618   -- File entry --
+2026-10-21 09:44:34.620   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Runtime.Serialization.Xml.dll
+2026-10-21 09:44:34.620   Time stamp of our file: 2026-08-20 21:16:30.000
+2026-10-21 09:44:34.620   Installing the file.
+2026-10-21 09:44:34.620   Successfully installed the file.
+2026-10-21 09:44:34.620   -- File entry --
+2026-10-21 09:44:34.620   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.AccessControl.dll
+2026-10-21 09:44:34.620   Time stamp of our file: 2026-08-20 21:27:14.000
+2026-10-21 09:44:34.620   Installing the file.
+2026-10-21 09:44:34.628   Successfully installed the file.
+2026-10-21 09:44:34.628   -- File entry --
+2026-10-21 09:44:34.628   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Claims.dll
+2026-10-21 09:44:34.628   Time stamp of our file: 2026-08-20 21:27:18.000
+2026-10-21 09:44:34.628   Installing the file.
+2026-10-21 09:44:34.630   Successfully installed the file.
+2026-10-21 09:44:34.630   -- File entry --
+2026-10-21 09:44:34.630   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Algorithms.dll
+2026-10-21 09:44:34.630   Time stamp of our file: 2026-08-20 21:17:24.000
+2026-10-21 09:44:34.630   Installing the file.
+2026-10-21 09:44:34.632   Successfully installed the file.
+2026-10-21 09:44:34.632   -- File entry --
+2026-10-21 09:44:34.633   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Cng.dll
+2026-10-21 09:44:34.633   Time stamp of our file: 2026-08-20 21:17:26.000
+2026-10-21 09:44:34.633   Installing the file.
+2026-10-21 09:44:34.634   Successfully installed the file.
+2026-10-21 09:44:34.634   -- File entry --
+2026-10-21 09:44:34.634   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Csp.dll
+2026-10-21 09:44:34.634   Time stamp of our file: 2026-08-20 21:17:28.000
+2026-10-21 09:44:34.634   Installing the file.
+2026-10-21 09:44:34.634   Successfully installed the file.
+2026-10-21 09:44:34.634   -- File entry --
+2026-10-21 09:44:34.634   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.dll
+2026-10-21 09:44:34.634   Time stamp of our file: 2026-08-20 21:27:20.000
+2026-10-21 09:44:34.634   Installing the file.
+2026-10-21 09:44:34.690   Successfully installed the file.
+2026-10-21 09:44:34.690   -- File entry --
+2026-10-21 09:44:34.690   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Encoding.dll
+2026-10-21 09:44:34.690   Time stamp of our file: 2026-08-20 21:17:30.000
+2026-10-21 09:44:34.690   Installing the file.
+2026-10-21 09:44:34.691   Successfully installed the file.
+2026-10-21 09:44:34.691   -- File entry --
+2026-10-21 09:44:34.691   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.OpenSsl.dll
+2026-10-21 09:44:34.691   Time stamp of our file: 2026-08-20 21:17:24.000
+2026-10-21 09:44:34.691   Installing the file.
+2026-10-21 09:44:34.692   Successfully installed the file.
+2026-10-21 09:44:34.692   -- File entry --
+2026-10-21 09:44:34.692   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Pkcs.dll
+2026-10-21 09:44:34.692   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:34.692   Installing the file.
+2026-10-21 09:44:34.711   Successfully installed the file.
+2026-10-21 09:44:34.713   -- File entry --
+2026-10-21 09:44:34.713   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Primitives.dll
+2026-10-21 09:44:34.713   Time stamp of our file: 2026-08-20 21:17:24.000
+2026-10-21 09:44:34.713   Installing the file.
+2026-10-21 09:44:34.713   Successfully installed the file.
+2026-10-21 09:44:34.713   -- File entry --
+2026-10-21 09:44:34.713   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.ProtectedData.dll
+2026-10-21 09:44:34.713   Time stamp of our file: 2026-08-22 00:39:14.000
+2026-10-21 09:44:34.713   Installing the file.
+2026-10-21 09:44:34.715   Successfully installed the file.
+2026-10-21 09:44:34.715   -- File entry --
+2026-10-21 09:44:34.715   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.X509Certificates.dll
+2026-10-21 09:44:34.715   Time stamp of our file: 2026-08-20 21:17:28.000
+2026-10-21 09:44:34.715   Installing the file.
+2026-10-21 09:44:34.717   Successfully installed the file.
+2026-10-21 09:44:34.717   -- File entry --
+2026-10-21 09:44:34.717   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Cryptography.Xml.dll
+2026-10-21 09:44:34.717   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:34.717   Installing the file.
+2026-10-21 09:44:34.728   Successfully installed the file.
+2026-10-21 09:44:34.728   -- File entry --
+2026-10-21 09:44:34.728   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.dll
+2026-10-21 09:44:34.730   Time stamp of our file: 2026-08-20 21:18:12.000
+2026-10-21 09:44:34.730   Installing the file.
+2026-10-21 09:44:34.730   Successfully installed the file.
+2026-10-21 09:44:34.730   -- File entry --
+2026-10-21 09:44:34.730   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Permissions.dll
+2026-10-21 09:44:34.730   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:34.730   Installing the file.
+2026-10-21 09:44:34.735   Successfully installed the file.
+2026-10-21 09:44:34.735   -- File entry --
+2026-10-21 09:44:34.736   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Principal.dll
+2026-10-21 09:44:34.736   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:34.736   Installing the file.
+2026-10-21 09:44:34.739   Successfully installed the file.
+2026-10-21 09:44:34.740   -- File entry --
+2026-10-21 09:44:34.740   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.Principal.Windows.dll
+2026-10-21 09:44:34.740   Time stamp of our file: 2026-08-20 21:27:24.000
+2026-10-21 09:44:34.740   Installing the file.
+2026-10-21 09:44:34.746   Successfully installed the file.
+2026-10-21 09:44:34.746   -- File entry --
+2026-10-21 09:44:34.746   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Security.SecureString.dll
+2026-10-21 09:44:34.746   Time stamp of our file: 2026-08-20 21:18:18.000
+2026-10-21 09:44:34.746   Installing the file.
+2026-10-21 09:44:34.748   Successfully installed the file.
+2026-10-21 09:44:34.748   -- File entry --
+2026-10-21 09:44:34.748   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ServiceModel.Web.dll
+2026-10-21 09:44:34.748   Time stamp of our file: 2026-08-20 21:17:26.000
+2026-10-21 09:44:34.748   Installing the file.
+2026-10-21 09:44:34.750   Successfully installed the file.
+2026-10-21 09:44:34.750   -- File entry --
+2026-10-21 09:44:34.750   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ServiceProcess.dll
+2026-10-21 09:44:34.750   Time stamp of our file: 2026-08-20 21:17:26.000
+2026-10-21 09:44:34.750   Installing the file.
+2026-10-21 09:44:34.750   Successfully installed the file.
+2026-10-21 09:44:34.750   -- File entry --
+2026-10-21 09:44:34.750   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.Encoding.CodePages.dll
+2026-10-21 09:44:34.752   Time stamp of our file: 2026-08-20 21:27:28.000
+2026-10-21 09:44:34.752   Installing the file.
+2026-10-21 09:44:34.774   Successfully installed the file.
+2026-10-21 09:44:34.774   -- File entry --
+2026-10-21 09:44:34.774   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.Encoding.dll
+2026-10-21 09:44:34.774   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:34.774   Installing the file.
+2026-10-21 09:44:34.776   Successfully installed the file.
+2026-10-21 09:44:34.776   -- File entry --
+2026-10-21 09:44:34.776   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.Encoding.Extensions.dll
+2026-10-21 09:44:34.776   Time stamp of our file: 2026-08-20 21:17:46.000
+2026-10-21 09:44:34.776   Installing the file.
+2026-10-21 09:44:34.776   Successfully installed the file.
+2026-10-21 09:44:34.776   -- File entry --
+2026-10-21 09:44:34.778   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.Encodings.Web.dll
+2026-10-21 09:44:34.778   Time stamp of our file: 2026-08-20 21:27:30.000
+2026-10-21 09:44:34.778   Installing the file.
+2026-10-21 09:44:34.780   Successfully installed the file.
+2026-10-21 09:44:34.780   -- File entry --
+2026-10-21 09:44:34.780   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.Json.dll
+2026-10-21 09:44:34.782   Time stamp of our file: 2026-08-20 21:27:34.000
+2026-10-21 09:44:34.782   Installing the file.
+2026-10-21 09:44:34.822   Successfully installed the file.
+2026-10-21 09:44:34.822   -- File entry --
+2026-10-21 09:44:34.822   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Text.RegularExpressions.dll
+2026-10-21 09:44:34.822   Time stamp of our file: 2026-08-20 21:27:36.000
+2026-10-21 09:44:34.822   Installing the file.
+2026-10-21 09:44:34.853   Successfully installed the file.
+2026-10-21 09:44:34.853   -- File entry --
+2026-10-21 09:44:34.853   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.AccessControl.dll
+2026-10-21 09:44:34.854   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:34.854   Installing the file.
+2026-10-21 09:44:34.855   Successfully installed the file.
+2026-10-21 09:44:34.855   -- File entry --
+2026-10-21 09:44:34.855   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Channels.dll
+2026-10-21 09:44:34.855   Time stamp of our file: 2026-08-20 21:27:40.000
+2026-10-21 09:44:34.855   Installing the file.
+2026-10-21 09:44:34.859   Successfully installed the file.
+2026-10-21 09:44:34.859   -- File entry --
+2026-10-21 09:44:34.859   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.dll
+2026-10-21 09:44:34.859   Time stamp of our file: 2026-08-20 21:27:42.000
+2026-10-21 09:44:34.859   Installing the file.
+2026-10-21 09:44:34.863   Successfully installed the file.
+2026-10-21 09:44:34.863   -- File entry --
+2026-10-21 09:44:34.863   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Overlapped.dll
+2026-10-21 09:44:34.863   Time stamp of our file: 2026-08-20 21:16:32.000
+2026-10-21 09:44:34.863   Installing the file.
+2026-10-21 09:44:34.863   Successfully installed the file.
+2026-10-21 09:44:34.863   -- File entry --
+2026-10-21 09:44:34.863   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Tasks.Dataflow.dll
+2026-10-21 09:44:34.863   Time stamp of our file: 2026-08-20 21:27:46.000
+2026-10-21 09:44:34.863   Installing the file.
+2026-10-21 09:44:34.879   Successfully installed the file.
+2026-10-21 09:44:34.879   -- File entry --
+2026-10-21 09:44:34.879   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Tasks.dll
+2026-10-21 09:44:34.879   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:34.879   Installing the file.
+2026-10-21 09:44:34.879   Successfully installed the file.
+2026-10-21 09:44:34.879   -- File entry --
+2026-10-21 09:44:34.879   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Tasks.Extensions.dll
+2026-10-21 09:44:34.879   Time stamp of our file: 2026-08-20 21:16:44.000
+2026-10-21 09:44:34.879   Installing the file.
+2026-10-21 09:44:34.881   Successfully installed the file.
+2026-10-21 09:44:34.881   -- File entry --
+2026-10-21 09:44:34.881   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Tasks.Parallel.dll
+2026-10-21 09:44:34.881   Time stamp of our file: 2026-08-20 21:27:48.000
+2026-10-21 09:44:34.881   Installing the file.
+2026-10-21 09:44:34.885   Successfully installed the file.
+2026-10-21 09:44:34.885   -- File entry --
+2026-10-21 09:44:34.885   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Thread.dll
+2026-10-21 09:44:34.885   Time stamp of our file: 2026-08-20 21:17:46.000
+2026-10-21 09:44:34.885   Installing the file.
+2026-10-21 09:44:34.885   Successfully installed the file.
+2026-10-21 09:44:34.885   -- File entry --
+2026-10-21 09:44:34.887   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.ThreadPool.dll
+2026-10-21 09:44:34.887   Time stamp of our file: 2026-08-20 21:16:28.000
+2026-10-21 09:44:34.887   Installing the file.
+2026-10-21 09:44:34.887   Successfully installed the file.
+2026-10-21 09:44:34.887   -- File entry --
+2026-10-21 09:44:34.887   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Threading.Timer.dll
+2026-10-21 09:44:34.887   Time stamp of our file: 2026-08-20 21:16:44.000
+2026-10-21 09:44:34.887   Installing the file.
+2026-10-21 09:44:34.887   Successfully installed the file.
+2026-10-21 09:44:34.887   -- File entry --
+2026-10-21 09:44:34.887   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Transactions.dll
+2026-10-21 09:44:34.887   Time stamp of our file: 2026-08-20 21:17:32.000
+2026-10-21 09:44:34.887   Installing the file.
+2026-10-21 09:44:34.890   Successfully installed the file.
+2026-10-21 09:44:34.890   -- File entry --
+2026-10-21 09:44:34.890   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Transactions.Local.dll
+2026-10-21 09:44:34.890   Time stamp of our file: 2026-08-20 21:27:52.000
+2026-10-21 09:44:34.890   Installing the file.
+2026-10-21 09:44:34.907   Successfully installed the file.
+2026-10-21 09:44:34.908   -- File entry --
+2026-10-21 09:44:34.908   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.ValueTuple.dll
+2026-10-21 09:44:34.908   Time stamp of our file: 2026-08-20 21:17:14.000
+2026-10-21 09:44:34.908   Installing the file.
+2026-10-21 09:44:34.915   Successfully installed the file.
+2026-10-21 09:44:34.915   -- File entry --
+2026-10-21 09:44:34.915   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Web.dll
+2026-10-21 09:44:34.915   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:34.915   Installing the file.
+2026-10-21 09:44:34.915   Successfully installed the file.
+2026-10-21 09:44:34.915   -- File entry --
+2026-10-21 09:44:34.915   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Web.HttpUtility.dll
+2026-10-21 09:44:34.915   Time stamp of our file: 2026-08-20 21:27:54.000
+2026-10-21 09:44:34.915   Installing the file.
+2026-10-21 09:44:34.919   Successfully installed the file.
+2026-10-21 09:44:34.919   -- File entry --
+2026-10-21 09:44:34.919   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Controls.Ribbon.dll
+2026-10-21 09:44:34.919   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:34.919   Installing the file.
+2026-10-21 09:44:34.954   Successfully installed the file.
+2026-10-21 09:44:34.954   -- File entry --
+2026-10-21 09:44:34.954   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.dll
+2026-10-21 09:44:34.954   Time stamp of our file: 2026-08-20 21:17:18.000
+2026-10-21 09:44:34.954   Installing the file.
+2026-10-21 09:44:34.954   Successfully installed the file.
+2026-10-21 09:44:34.954   -- File entry --
+2026-10-21 09:44:34.954   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Extensions.dll
+2026-10-21 09:44:34.954   Time stamp of our file: 2026-08-22 00:39:16.000
+2026-10-21 09:44:34.954   Installing the file.
+2026-10-21 09:44:34.958   Successfully installed the file.
+2026-10-21 09:44:34.958   -- File entry --
+2026-10-21 09:44:34.958   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Forms.Design.dll
+2026-10-21 09:44:34.958   Time stamp of our file: 2026-08-22 00:39:18.000
+2026-10-21 09:44:34.958   Installing the file.
+2026-10-21 09:44:35.081   Successfully installed the file.
+2026-10-21 09:44:35.081   -- File entry --
+2026-10-21 09:44:35.081   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Forms.Design.Editors.dll
+2026-10-21 09:44:35.081   Time stamp of our file: 2026-08-21 21:57:08.000
+2026-10-21 09:44:35.081   Installing the file.
+2026-10-21 09:44:35.081   Successfully installed the file.
+2026-10-21 09:44:35.081   -- File entry --
+2026-10-21 09:44:35.081   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Forms.dll
+2026-10-21 09:44:35.081   Time stamp of our file: 2026-08-22 00:39:22.000
+2026-10-21 09:44:35.081   Installing the file.
+2026-10-21 09:44:35.407   Successfully installed the file.
+2026-10-21 09:44:35.407   -- File entry --
+2026-10-21 09:44:35.407   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Forms.Primitives.dll
+2026-10-21 09:44:35.407   Time stamp of our file: 2026-08-22 00:39:18.000
+2026-10-21 09:44:35.407   Installing the file.
+2026-10-21 09:44:35.471   Successfully installed the file.
+2026-10-21 09:44:35.471   -- File entry --
+2026-10-21 09:44:35.471   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Input.Manipulations.dll
+2026-10-21 09:44:35.471   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.471   Installing the file.
+2026-10-21 09:44:35.477   Successfully installed the file.
+2026-10-21 09:44:35.477   -- File entry --
+2026-10-21 09:44:35.477   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Windows.Presentation.dll
+2026-10-21 09:44:35.478   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.478   Installing the file.
+2026-10-21 09:44:35.478   Successfully installed the file.
+2026-10-21 09:44:35.478   -- File entry --
+2026-10-21 09:44:35.478   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xaml.dll
+2026-10-21 09:44:35.478   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.478   Installing the file.
+2026-10-21 09:44:35.519   Successfully installed the file.
+2026-10-21 09:44:35.519   -- File entry --
+2026-10-21 09:44:35.519   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.dll
+2026-10-21 09:44:35.519   Time stamp of our file: 2026-08-20 21:18:12.000
+2026-10-21 09:44:35.519   Installing the file.
+2026-10-21 09:44:35.519   Successfully installed the file.
+2026-10-21 09:44:35.519   -- File entry --
+2026-10-21 09:44:35.519   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.Linq.dll
+2026-10-21 09:44:35.519   Time stamp of our file: 2026-08-20 21:18:20.000
+2026-10-21 09:44:35.519   Installing the file.
+2026-10-21 09:44:35.521   Successfully installed the file.
+2026-10-21 09:44:35.521   -- File entry --
+2026-10-21 09:44:35.521   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.ReaderWriter.dll
+2026-10-21 09:44:35.521   Time stamp of our file: 2026-08-20 21:17:56.000
+2026-10-21 09:44:35.521   Installing the file.
+2026-10-21 09:44:35.521   Successfully installed the file.
+2026-10-21 09:44:35.521   -- File entry --
+2026-10-21 09:44:35.521   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.Serialization.dll
+2026-10-21 09:44:35.523   Time stamp of our file: 2026-08-20 21:18:02.000
+2026-10-21 09:44:35.523   Installing the file.
+2026-10-21 09:44:35.523   Successfully installed the file.
+2026-10-21 09:44:35.523   -- File entry --
+2026-10-21 09:44:35.523   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.XDocument.dll
+2026-10-21 09:44:35.523   Time stamp of our file: 2026-08-20 21:18:20.000
+2026-10-21 09:44:35.523   Installing the file.
+2026-10-21 09:44:35.523   Successfully installed the file.
+2026-10-21 09:44:35.523   -- File entry --
+2026-10-21 09:44:35.525   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.XmlDocument.dll
+2026-10-21 09:44:35.525   Time stamp of our file: 2026-08-20 21:18:02.000
+2026-10-21 09:44:35.525   Installing the file.
+2026-10-21 09:44:35.525   Successfully installed the file.
+2026-10-21 09:44:35.525   -- File entry --
+2026-10-21 09:44:35.525   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.XmlSerializer.dll
+2026-10-21 09:44:35.525   Time stamp of our file: 2026-08-20 21:17:16.000
+2026-10-21 09:44:35.525   Installing the file.
+2026-10-21 09:44:35.525   Successfully installed the file.
+2026-10-21 09:44:35.527   -- File entry --
+2026-10-21 09:44:35.527   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.XPath.dll
+2026-10-21 09:44:35.527   Time stamp of our file: 2026-08-20 21:17:26.000
+2026-10-21 09:44:35.527   Installing the file.
+2026-10-21 09:44:35.527   Successfully installed the file.
+2026-10-21 09:44:35.527   -- File entry --
+2026-10-21 09:44:35.527   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\System.Xml.XPath.XDocument.dll
+2026-10-21 09:44:35.527   Time stamp of our file: 2026-08-20 21:27:58.000
+2026-10-21 09:44:35.527   Installing the file.
+2026-10-21 09:44:35.529   Successfully installed the file.
+2026-10-21 09:44:35.529   -- File entry --
+2026-10-21 09:44:35.529   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\UIAutomationClient.dll
+2026-10-21 09:44:35.529   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.529   Installing the file.
+2026-10-21 09:44:35.541   Successfully installed the file.
+2026-10-21 09:44:35.541   -- File entry --
+2026-10-21 09:44:35.541   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\UIAutomationClientSideProviders.dll
+2026-10-21 09:44:35.541   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.541   Installing the file.
+2026-10-21 09:44:35.565   Successfully installed the file.
+2026-10-21 09:44:35.565   -- File entry --
+2026-10-21 09:44:35.565   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\UIAutomationProvider.dll
+2026-10-21 09:44:35.565   Time stamp of our file: 2026-08-22 00:39:34.000
+2026-10-21 09:44:35.565   Installing the file.
+2026-10-21 09:44:35.567   Successfully installed the file.
+2026-10-21 09:44:35.567   -- File entry --
+2026-10-21 09:44:35.567   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\UIAutomationTypes.dll
+2026-10-21 09:44:35.567   Time stamp of our file: 2026-08-22 00:39:36.000
+2026-10-21 09:44:35.567   Installing the file.
+2026-10-21 09:44:35.575   Successfully installed the file.
+2026-10-21 09:44:35.575   -- File entry --
+2026-10-21 09:44:35.575   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\vcruntime140_cor3.dll
+2026-10-21 09:44:35.575   Time stamp of our file: 2026-08-05 02:43:18.000
+2026-10-21 09:44:35.575   Installing the file.
+2026-10-21 09:44:35.579   Successfully installed the file.
+2026-10-21 09:44:35.579   -- File entry --
+2026-10-21 09:44:35.579   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\WebView2Loader.dll
+2026-10-21 09:44:35.580   Time stamp of our file: 2024-11-10 08:57:38.000
+2026-10-21 09:44:35.580   Installing the file.
+2026-10-21 09:44:35.584   Successfully installed the file.
+2026-10-21 09:44:35.584   -- File entry --
+2026-10-21 09:44:35.584   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\WindowsBase.dll
+2026-10-21 09:44:35.585   Time stamp of our file: 2026-08-22 00:39:36.000
+2026-10-21 09:44:35.585   Installing the file.
+2026-10-21 09:44:35.643   Successfully installed the file.
+2026-10-21 09:44:35.643   -- File entry --
+2026-10-21 09:44:35.643   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\WindowsFormsIntegration.dll
+2026-10-21 09:44:35.643   Time stamp of our file: 2026-08-22 00:39:36.000
+2026-10-21 09:44:35.643   Installing the file.
+2026-10-21 09:44:35.649   Successfully installed the file.
+2026-10-21 09:44:35.649   -- File entry --
+2026-10-21 09:44:35.649   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wpfgfx_cor3.dll
+2026-10-21 09:44:35.649   Time stamp of our file: 2026-08-21 22:49:00.000
+2026-10-21 09:44:35.649   Installing the file.
+2026-10-21 09:44:35.700   Successfully installed the file.
+2026-10-21 09:44:35.700   -- File entry --
+2026-10-21 09:44:35.700   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\Microsoft.VisualBasic.Forms.resources.dll
+2026-10-21 09:44:35.700   Time stamp of our file: 2026-08-21 21:56:56.000
+2026-10-21 09:44:35.700   Installing the file.
+2026-10-21 09:44:35.700   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru
+2026-10-21 09:44:35.702   Successfully installed the file.
+2026-10-21 09:44:35.702   -- File entry --
+2026-10-21 09:44:35.702   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\PresentationCore.resources.dll
+2026-10-21 09:44:35.702   Time stamp of our file: 2026-08-21 22:48:58.000
+2026-10-21 09:44:35.702   Installing the file.
+2026-10-21 09:44:35.704   Successfully installed the file.
+2026-10-21 09:44:35.704   -- File entry --
+2026-10-21 09:44:35.704   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\PresentationFramework.resources.dll
+2026-10-21 09:44:35.706   Time stamp of our file: 2026-08-21 22:49:16.000
+2026-10-21 09:44:35.706   Installing the file.
+2026-10-21 09:44:35.712   Successfully installed the file.
+2026-10-21 09:44:35.712   -- File entry --
+2026-10-21 09:44:35.712   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\PresentationUI.resources.dll
+2026-10-21 09:44:35.712   Time stamp of our file: 2026-08-21 22:49:38.000
+2026-10-21 09:44:35.712   Installing the file.
+2026-10-21 09:44:35.715   Successfully installed the file.
+2026-10-21 09:44:35.715   -- File entry --
+2026-10-21 09:44:35.715   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\ReachFramework.resources.dll
+2026-10-21 09:44:35.715   Time stamp of our file: 2026-08-21 22:49:04.000
+2026-10-21 09:44:35.715   Installing the file.
+2026-10-21 09:44:35.716   Successfully installed the file.
+2026-10-21 09:44:35.716   -- File entry --
+2026-10-21 09:44:35.717   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Windows.Controls.Ribbon.resources.dll
+2026-10-21 09:44:35.717   Time stamp of our file: 2026-08-21 22:49:52.000
+2026-10-21 09:44:35.717   Installing the file.
+2026-10-21 09:44:35.717   Successfully installed the file.
+2026-10-21 09:44:35.717   -- File entry --
+2026-10-21 09:44:35.718   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Windows.Forms.Design.resources.dll
+2026-10-21 09:44:35.718   Time stamp of our file: 2026-08-21 21:57:04.000
+2026-10-21 09:44:35.718   Installing the file.
+2026-10-21 09:44:35.721   Successfully installed the file.
+2026-10-21 09:44:35.721   -- File entry --
+2026-10-21 09:44:35.721   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Windows.Forms.Primitives.resources.dll
+2026-10-21 09:44:35.721   Time stamp of our file: 2026-08-21 21:56:20.000
+2026-10-21 09:44:35.721   Installing the file.
+2026-10-21 09:44:35.723   Successfully installed the file.
+2026-10-21 09:44:35.723   -- File entry --
+2026-10-21 09:44:35.723   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Windows.Forms.resources.dll
+2026-10-21 09:44:35.723   Time stamp of our file: 2026-08-21 21:56:52.000
+2026-10-21 09:44:35.723   Installing the file.
+2026-10-21 09:44:35.730   Successfully installed the file.
+2026-10-21 09:44:35.730   -- File entry --
+2026-10-21 09:44:35.730   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Windows.Input.Manipulations.resources.dll
+2026-10-21 09:44:35.730   Time stamp of our file: 2026-08-21 22:48:16.000
+2026-10-21 09:44:35.730   Installing the file.
+2026-10-21 09:44:35.732   Successfully installed the file.
+2026-10-21 09:44:35.732   -- File entry --
+2026-10-21 09:44:35.732   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\System.Xaml.resources.dll
+2026-10-21 09:44:35.732   Time stamp of our file: 2026-08-21 22:48:20.000
+2026-10-21 09:44:35.732   Installing the file.
+2026-10-21 09:44:35.734   Successfully installed the file.
+2026-10-21 09:44:35.734   -- File entry --
+2026-10-21 09:44:35.734   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\UIAutomationClient.resources.dll
+2026-10-21 09:44:35.734   Time stamp of our file: 2026-08-21 22:48:58.000
+2026-10-21 09:44:35.734   Installing the file.
+2026-10-21 09:44:35.736   Successfully installed the file.
+2026-10-21 09:44:35.736   -- File entry --
+2026-10-21 09:44:35.736   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\UIAutomationClientSideProviders.resources.dll
+2026-10-21 09:44:35.736   Time stamp of our file: 2026-08-21 22:49:00.000
+2026-10-21 09:44:35.736   Installing the file.
+2026-10-21 09:44:35.736   Successfully installed the file.
+2026-10-21 09:44:35.736   -- File entry --
+2026-10-21 09:44:35.736   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\UIAutomationProvider.resources.dll
+2026-10-21 09:44:35.736   Time stamp of our file: 2026-08-21 22:48:44.000
+2026-10-21 09:44:35.736   Installing the file.
+2026-10-21 09:44:35.738   Successfully installed the file.
+2026-10-21 09:44:35.738   -- File entry --
+2026-10-21 09:44:35.738   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\UIAutomationTypes.resources.dll
+2026-10-21 09:44:35.738   Time stamp of our file: 2026-08-21 22:48:38.000
+2026-10-21 09:44:35.738   Installing the file.
+2026-10-21 09:44:35.740   Successfully installed the file.
+2026-10-21 09:44:35.740   -- File entry --
+2026-10-21 09:44:35.740   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\WindowsBase.resources.dll
+2026-10-21 09:44:35.740   Time stamp of our file: 2026-08-21 22:48:36.000
+2026-10-21 09:44:35.740   Installing the file.
+2026-10-21 09:44:35.742   Successfully installed the file.
+2026-10-21 09:44:35.742   -- File entry --
+2026-10-21 09:44:35.744   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\ru\WindowsFormsIntegration.resources.dll
+2026-10-21 09:44:35.744   Time stamp of our file: 2026-08-21 22:49:18.000
+2026-10-21 09:44:35.744   Installing the file.
+2026-10-21 09:44:35.744   Successfully installed the file.
+2026-10-21 09:44:35.744   -- File entry --
+2026-10-21 09:44:35.744   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\runtimes\win-x64\native\WebView2Loader.dll
+2026-10-21 09:44:35.744   Time stamp of our file: 2024-11-10 08:57:38.000
+2026-10-21 09:44:35.744   Installing the file.
+2026-10-21 09:44:35.744   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\runtimes
+2026-10-21 09:44:35.744   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\runtimes\win-x64
+2026-10-21 09:44:35.744   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\runtimes\win-x64\native
+2026-10-21 09:44:35.746   Successfully installed the file.
+2026-10-21 09:44:35.746   -- File entry --
+2026-10-21 09:44:35.746   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\page.html
+2026-10-21 09:44:35.748   Time stamp of our file: 2026-10-21 09:42:06.000
+2026-10-21 09:44:35.748   Installing the file.
+2026-10-21 09:44:35.748   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot
+2026-10-21 09:44:35.748   Successfully installed the file.
+2026-10-21 09:44:35.748   -- File entry --
+2026-10-21 09:44:35.748   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\app.bundle.js
+2026-10-21 09:44:35.748   Time stamp of our file: 2026-10-21 09:43:14.000
+2026-10-21 09:44:35.748   Installing the file.
+2026-10-21 09:44:35.748   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib
+2026-10-21 09:44:35.770   Successfully installed the file.
+2026-10-21 09:44:35.771   -- File entry --
+2026-10-21 09:44:35.771   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\app.css
+2026-10-21 09:44:35.771   Time stamp of our file: 2026-10-21 09:42:06.000
+2026-10-21 09:44:35.771   Installing the file.
+2026-10-21 09:44:35.772   Successfully installed the file.
+2026-10-21 09:44:35.772   -- File entry --
+2026-10-21 09:44:35.772   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\github-markdown-dark.css
+2026-10-21 09:44:35.772   Time stamp of our file: 2026-10-21 09:43:06.000
+2026-10-21 09:44:35.772   Installing the file.
+2026-10-21 09:44:35.773   Successfully installed the file.
+2026-10-21 09:44:35.773   -- File entry --
+2026-10-21 09:44:35.773   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\github-markdown-light.css
+2026-10-21 09:44:35.774   Time stamp of our file: 2026-10-21 09:43:06.000
+2026-10-21 09:44:35.774   Installing the file.
+2026-10-21 09:44:35.776   Successfully installed the file.
+2026-10-21 09:44:35.776   -- File entry --
+2026-10-21 09:44:35.776   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\hljs-github-dark.css
+2026-10-21 09:44:35.776   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.776   Installing the file.
+2026-10-21 09:44:35.776   Successfully installed the file.
+2026-10-21 09:44:35.777   -- File entry --
+2026-10-21 09:44:35.777   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\hljs-github.css
+2026-10-21 09:44:35.777   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.777   Installing the file.
+2026-10-21 09:44:35.778   Successfully installed the file.
+2026-10-21 09:44:35.778   -- File entry --
+2026-10-21 09:44:35.778   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\katex.min.css
+2026-10-21 09:44:35.778   Time stamp of our file: 2026-10-21 09:43:06.000
+2026-10-21 09:44:35.778   Installing the file.
+2026-10-21 09:44:35.778   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex
+2026-10-21 09:44:35.779   Successfully installed the file.
+2026-10-21 09:44:35.779   -- File entry --
+2026-10-21 09:44:35.779   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_AMS-Regular.woff2
+2026-10-21 09:44:35.780   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.780   Installing the file.
+2026-10-21 09:44:35.780   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts
+2026-10-21 09:44:35.782   Successfully installed the file.
+2026-10-21 09:44:35.782   -- File entry --
+2026-10-21 09:44:35.782   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Caligraphic-Bold.woff2
+2026-10-21 09:44:35.782   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.782   Installing the file.
+2026-10-21 09:44:35.783   Successfully installed the file.
+2026-10-21 09:44:35.783   -- File entry --
+2026-10-21 09:44:35.784   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Caligraphic-Regular.woff2
+2026-10-21 09:44:35.784   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.784   Installing the file.
+2026-10-21 09:44:35.790   Successfully installed the file.
+2026-10-21 09:44:35.790   -- File entry --
+2026-10-21 09:44:35.790   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Fraktur-Bold.woff2
+2026-10-21 09:44:35.790   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.791   Installing the file.
+2026-10-21 09:44:35.791   Successfully installed the file.
+2026-10-21 09:44:35.791   -- File entry --
+2026-10-21 09:44:35.791   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Fraktur-Regular.woff2
+2026-10-21 09:44:35.791   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.791   Installing the file.
+2026-10-21 09:44:35.791   Successfully installed the file.
+2026-10-21 09:44:35.791   -- File entry --
+2026-10-21 09:44:35.791   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Main-Bold.woff2
+2026-10-21 09:44:35.791   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.791   Installing the file.
+2026-10-21 09:44:35.793   Successfully installed the file.
+2026-10-21 09:44:35.793   -- File entry --
+2026-10-21 09:44:35.793   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Main-BoldItalic.woff2
+2026-10-21 09:44:35.793   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.793   Installing the file.
+2026-10-21 09:44:35.793   Successfully installed the file.
+2026-10-21 09:44:35.793   -- File entry --
+2026-10-21 09:44:35.795   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Main-Italic.woff2
+2026-10-21 09:44:35.795   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.795   Installing the file.
+2026-10-21 09:44:35.795   Successfully installed the file.
+2026-10-21 09:44:35.795   -- File entry --
+2026-10-21 09:44:35.795   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Main-Regular.woff2
+2026-10-21 09:44:35.795   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.795   Installing the file.
+2026-10-21 09:44:35.795   Successfully installed the file.
+2026-10-21 09:44:35.797   -- File entry --
+2026-10-21 09:44:35.797   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Math-BoldItalic.woff2
+2026-10-21 09:44:35.797   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.797   Installing the file.
+2026-10-21 09:44:35.797   Successfully installed the file.
+2026-10-21 09:44:35.797   -- File entry --
+2026-10-21 09:44:35.797   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Math-Italic.woff2
+2026-10-21 09:44:35.797   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.797   Installing the file.
+2026-10-21 09:44:35.797   Successfully installed the file.
+2026-10-21 09:44:35.797   -- File entry --
+2026-10-21 09:44:35.799   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Bold.woff2
+2026-10-21 09:44:35.799   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.799   Installing the file.
+2026-10-21 09:44:35.800   Successfully installed the file.
+2026-10-21 09:44:35.800   -- File entry --
+2026-10-21 09:44:35.800   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Italic.woff2
+2026-10-21 09:44:35.800   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.800   Installing the file.
+2026-10-21 09:44:35.801   Successfully installed the file.
+2026-10-21 09:44:35.801   -- File entry --
+2026-10-21 09:44:35.801   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_SansSerif-Regular.woff2
+2026-10-21 09:44:35.801   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.801   Installing the file.
+2026-10-21 09:44:35.802   Successfully installed the file.
+2026-10-21 09:44:35.802   -- File entry --
+2026-10-21 09:44:35.802   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Script-Regular.woff2
+2026-10-21 09:44:35.802   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.802   Installing the file.
+2026-10-21 09:44:35.802   Successfully installed the file.
+2026-10-21 09:44:35.803   -- File entry --
+2026-10-21 09:44:35.803   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Size1-Regular.woff2
+2026-10-21 09:44:35.803   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.803   Installing the file.
+2026-10-21 09:44:35.803   Successfully installed the file.
+2026-10-21 09:44:35.803   -- File entry --
+2026-10-21 09:44:35.803   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Size2-Regular.woff2
+2026-10-21 09:44:35.803   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.803   Installing the file.
+2026-10-21 09:44:35.807   Successfully installed the file.
+2026-10-21 09:44:35.807   -- File entry --
+2026-10-21 09:44:35.807   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Size3-Regular.woff2
+2026-10-21 09:44:35.807   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.807   Installing the file.
+2026-10-21 09:44:35.809   Successfully installed the file.
+2026-10-21 09:44:35.809   -- File entry --
+2026-10-21 09:44:35.809   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Size4-Regular.woff2
+2026-10-21 09:44:35.809   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.809   Installing the file.
+2026-10-21 09:44:35.809   Successfully installed the file.
+2026-10-21 09:44:35.809   -- File entry --
+2026-10-21 09:44:35.809   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\katex\fonts\KaTeX_Typewriter-Regular.woff2
+2026-10-21 09:44:35.809   Time stamp of our file: 2026-10-21 09:43:08.000
+2026-10-21 09:44:35.809   Installing the file.
+2026-10-21 09:44:35.811   Successfully installed the file.
+2026-10-21 09:44:35.811   -- File entry --
+2026-10-21 09:44:35.811   Dest filename: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\mermaid\mermaid.min.js
+2026-10-21 09:44:35.811   Time stamp of our file: 2026-10-21 09:43:06.000
+2026-10-21 09:44:35.811   Installing the file.
+2026-10-21 09:44:35.811   Creating directory: C:\Users\runneradmin\AppData\Local\Programs\MD Viewer\wwwroot\lib\mermaid
+2026-10-21 09:44:35.877   Successfully installed the file.
+2026-10-21 09:44:35.877   -- Icon entry --
+2026-10-21 09:44:35.877   Dest filename: C:\Users\runneradmin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MD Viewer.lnk
+2026-10-21 09:44:35.877   Creating the icon.
+2026-10-21 09:44:36.550   Successfully created the icon.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\Applications\MDViewer.exe
+2026-10-21 09:44:36.556   Value name: FriendlyAppName
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\Applications\MDViewer.exe\shell\open\command
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\Applications\MDViewer.exe\SupportedTypes
+2026-10-21 09:44:36.556   Value name: .md
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\Applications\MDViewer.exe\SupportedTypes
+2026-10-21 09:44:36.556   Value name: .markdown
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\MDViewer.Markdown
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\MDViewer.Markdown\DefaultIcon
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\MDViewer.Markdown\shell\open\command
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.556   Creating or setting the value.
+2026-10-21 09:44:36.556   Successfully created or set the value.
+2026-10-21 09:44:36.556   -- Registry entry --
+2026-10-21 09:44:36.556   Key: HKEY_CURRENT_USER\Software\Classes\.md\OpenWithProgids
+2026-10-21 09:44:36.556   Value name: MDViewer.Markdown
+2026-10-21 09:44:36.556   Creating or opening the key.
+2026-10-21 09:44:36.557   Creating or setting the value.
+2026-10-21 09:44:36.557   Successfully created or set the value.
+2026-10-21 09:44:36.557   -- Registry entry --
+2026-10-21 09:44:36.557   Key: HKEY_CURRENT_USER\Software\Classes\.markdown\OpenWithProgids
+2026-10-21 09:44:36.557   Value name: MDViewer.Markdown
+2026-10-21 09:44:36.557   Creating or opening the key.
+2026-10-21 09:44:36.557   Creating or setting the value.
+2026-10-21 09:44:36.557   Successfully created or set the value.
+2026-10-21 09:44:36.557   -- Registry entry --
+2026-10-21 09:44:36.557   Key: HKEY_CURRENT_USER\Software\Classes\.md
+2026-10-21 09:44:36.557   Creating or opening the key.
+2026-10-21 09:44:36.557   Creating or setting the value.
+2026-10-21 09:44:36.557   Successfully created or set the value.
+2026-10-21 09:44:36.558   -- Registry entry --
+2026-10-21 09:44:36.558   Key: HKEY_CURRENT_USER\Software\Classes\.markdown
+2026-10-21 09:44:36.558   Creating or opening the key.
+2026-10-21 09:44:36.558   Creating or setting the value.
+2026-10-21 09:44:36.558   Successfully created or set the value.
+2026-10-21 09:44:36.558   Saving uninstall information.
+2026-10-21 09:44:36.558   Creating new uninstall key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{6B0F8E7C-3D52-4C31-9E7A-8A4B1F2D6C01}_is1
+2026-10-21 09:44:36.558   Writing uninstall key values.
+2026-10-21 09:44:36.558   Detected previous administrative 64-bit install? No
+2026-10-21 09:44:36.558   Detected previous administrative 32-bit install? No
+2026-10-21 09:44:36.579   Installation process succeeded.
+2026-10-21 09:44:36.581   Need to restart Windows? No
+2026-10-21 09:44:36.583   Deinitializing Setup.
+2026-10-21 09:44:36.588   Log closed.

@@ -1,0 +1,6 @@
+  Determining projects to restore...
+  Restored D:\a\md-viewer\md-viewer\src\MdViewer.Core\MdViewer.Core.csproj (in 7.37 sec).
+  Restored D:\a\md-viewer\md-viewer\src\MdViewer\MdViewer.csproj (in 7.37 sec).
+  MdViewer.Core -> D:\a\md-viewer\md-viewer\src\MdViewer.Core\bin\Release\net8.0\MdViewer.Core.dll
+  MdViewer -> D:\a\md-viewer\md-viewer\src\MdViewer\bin\Release\net8.0-windows\win-x64\MDViewer.dll
+  MdViewer -> D:\a\md-viewer\md-viewer\publish\

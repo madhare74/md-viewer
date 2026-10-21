@@ -1,0 +1,8 @@
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 199 packages in 9s
+
+> md-viewer-web@1.0.0 build
+> node build.mjs
+
+web assets -> D:\a\md-viewer\md-viewer\src\MdViewer\wwwroot
