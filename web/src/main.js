@@ -344,6 +344,19 @@ function errorBox(text) {
   return d;
 }
 
+// Блоки ```mermaid приходят как экранированный код — превратить их в контейнеры схем.
+function convertMermaid(rootEl) {
+  for (const code of rootEl.querySelectorAll('pre > code.language-mermaid')) {
+    const pre = code.parentElement;
+    const div = document.createElement('div');
+    div.className = 'mermaid';
+    div.textContent = code.textContent;
+    const line = code.getAttribute('data-line') || pre.getAttribute('data-line');
+    if (line != null) div.setAttribute('data-line', line);
+    pre.replaceWith(div);
+  }
+}
+
 function highlightCode(rootEl) {
   for (const code of rootEl.querySelectorAll('pre > code')) {
     const pre = code.parentElement;
@@ -474,6 +487,7 @@ function render(html, toc, version) {
   if (version != null) S.renderedVersion = version;
   const token = ++S.renderToken;
   preview.innerHTML = html;
+  convertMermaid(preview);
   highlightCode(preview);
   renderMath(preview);
   S.lineEls = [...preview.querySelectorAll('[data-line]')]

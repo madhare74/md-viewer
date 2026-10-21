@@ -100,3 +100,13 @@ test('экспорт: html без кнопок копирования и слу�
   assert.ok(!h.includes('data-line'));
   assert.ok(h.includes('katex'));
 });
+
+test('блок mermaid превращается в контейнер схемы', async () => {
+  const { w, send } = await load();
+  send({ type: 'init', text: '', html: '<pre><code class="language-mermaid" data-line="3">graph TD\nA--&gt;B[&lt;b&gt;x&lt;/b&gt;]\n</code></pre>', toc: [], mode: 'view', theme: 'light', settings: {} });
+  const div = w.document.querySelector('#preview div.mermaid');
+  assert.ok(div);
+  assert.equal(div.getAttribute('data-line'), '3');
+  assert.ok(div.textContent.includes('A-->B[<b>x</b>]'));
+  assert.equal(w.document.querySelectorAll('#preview .code-copy').length, 0);
+});

@@ -15,7 +15,8 @@ public sealed record RenderResult(string Html, IReadOnlyList<TocEntry> Toc, bool
 
 /// <summary>
 /// Markdown → HTML в стиле GitHub (GFM): таблицы, списки задач, зачёркивание, сноски, автоссылки,
-/// эмодзи по кодам, формулы (KaTeX рисует на странице), схемы Mermaid (рисуются на странице).
+/// эмодзи по кодам, формулы (KaTeX рисует на странице), схемы Mermaid — блоки ```mermaid остаются
+/// экранированным кодом (language-mermaid), страница превращает их в схемы.
 /// HTML внутри документа пропускается через фильтр: скрипты и обработчики событий удаляются.
 /// У блоков проставляется data-line — номер строки исходника для синхронной прокрутки.
 /// </summary>
@@ -34,7 +35,6 @@ public sealed class MarkdownRenderer
             .UseFootnotes()
             .UseEmojiAndSmiley(false)
             .UseMathematics()
-            .UseDiagrams()
             .UseAutoIdentifiers(AutoIdentifierOptions.GitHub)
             .Build();
     }
