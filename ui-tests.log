@@ -1,0 +1,44 @@
+Test run for D:\a\md-viewer\md-viewer\tests\MdViewer.UiTests\bin\Release\net8.0-windows\MdViewer.UiTests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.32)
+[xUnit.net 00:00:00.07]   Discovering: MdViewer.UiTests (method display = ClassAndMethod, method display options = None)
+[xUnit.net 00:00:00.10]   Discovered:  MdViewer.UiTests (found 21 test cases)
+[xUnit.net 00:00:00.11]   Starting:    MdViewer.UiTests (parallel test collections = off, stop on fail = off)
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "light", scale: 1.5) [9 s]
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "light", scale: 1) [6 s]
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "dark", scale: 1.5) [6 s]
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "light", scale: 2) [7 s]
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "dark", scale: 2) [7 s]
+  Passed MdViewer.UiTests.UiTests.Screenshots_ThemesAndScales(theme: "dark", scale: 1) [6 s]
+  Passed MdViewer.UiTests.UiTests.Tabs_RestoredOnNextLaunch_AndReorder [3 s]
+  Passed MdViewer.UiTests.UiTests.MermaidError_ShowsMessage_DocumentStillShown [2 s]
+[xUnit.net 00:00:54.19]     MdViewer.UiTests.UiTests.OpenFromCommandLine_ShowsFormattedDocument [PASS]
+[xUnit.net 00:00:54.19]       Output:
+[xUnit.net 00:00:54.19]         {"mode":"view","theme":"light","previewScroll":0,"editorScroll":0,"tocCurrent":0,"tocItems":10,"renderedVersion":0,"version":0,"mermaidOk":2,"mermaidErrors":0,"mermaidPending":0,"exporting":false,"mathOk":3,"mathErrors":0,"highlighted":4,"zoom":1}
+  Passed MdViewer.UiTests.UiTests.OpenFromCommandLine_ShowsFormattedDocument [2 s]
+  Passed MdViewer.UiTests.UiTests.CloseTab_SaveFromDialog_WritesFile [2 s]
+  Passed MdViewer.UiTests.UiTests.PasteImage_SavesPngNextToDocument [2 s]
+[xUnit.net 00:01:03.44]     MdViewer.UiTests.UiTests.Export_PdfAndHtml [PASS]
+[xUnit.net 00:01:03.44]       Output:
+[xUnit.net 00:01:03.44]         PDF: 211250 байт, /MediaBox [0 0 594.95996 841.91998], ссылки: True
+  Passed MdViewer.UiTests.UiTests.Export_PdfAndHtml [3 s]
+  Passed MdViewer.UiTests.UiTests.Toc_ClickScrollsToHeading [3 s]
+  Passed MdViewer.UiTests.UiTests.Links_OpenOtherMarkdownInNewTab [1 s]
+  Passed MdViewer.UiTests.UiTests.DroppedFiles_OpenAsTabs [2 s]
+  Passed MdViewer.UiTests.UiTests.CloseWindow_AsksToSave_CancelAndDontSave [4 s]
+  Passed MdViewer.UiTests.UiTests.Encoding_Cp1251_IsDetected [1 s]
+  Passed MdViewer.UiTests.UiTests.Scripts_InDocument_AreNotExecuted [3 s]
+  Passed MdViewer.UiTests.UiTests.SecondLaunch_OpensTabInSameWindow [4 s]
+[xUnit.net 00:01:35.66]     MdViewer.UiTests.UiTests.Modes_EditingUpdatesPreview_AndKeyboardWorks [PASS]
+[xUnit.net 00:01:35.66]       Output:
+[xUnit.net 00:01:35.66]         Обновление просмотра: 359 мс
+  Passed MdViewer.UiTests.UiTests.Modes_EditingUpdatesPreview_AndKeyboardWorks [10 s]
+[xUnit.net 00:01:39.67]   Finished:    MdViewer.UiTests
+Data collector 'Blame' message: All tests finished running, Sequence file will not be generated.
+  Passed MdViewer.UiTests.UiTests.ExternalChange_ReloadsOrAsks [3 s]
+Results File: D:\a\md-viewer\md-viewer\ui-results\trx\ui-tests.trx
+
+Test Run Successful.
+Total tests: 21
+     Passed: 21
+ Total time: 1.6731 Minutes
