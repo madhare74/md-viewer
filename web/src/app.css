@@ -50,8 +50,8 @@ body.dragging { cursor: col-resize; user-select: none; }
 
 /* ---------- Оглавление ---------- */
 #toc {
-  flex: 0 0 var(--toc-w);
-  width: var(--toc-w);
+  flex: 0 0 min(var(--toc-w), 34vw);
+  width: min(var(--toc-w), 34vw);
   min-width: 0;
   overflow: auto;
   background: var(--panel);
@@ -144,7 +144,7 @@ body.dragging { cursor: col-resize; user-select: none; }
   zoom: var(--preview-zoom);
   max-width: 980px;
   margin: 0 auto;
-  padding: 32px 40px 80px;
+  padding: 32px clamp(16px, 4vw, 40px) 80px;
   min-height: 100%;
   background: transparent !important;
 }
@@ -152,6 +152,8 @@ body.dragging { cursor: col-resize; user-select: none; }
 
 .markdown-body { background: transparent; }
 .markdown-body .code-wrap { position: relative; }
+.markdown-body .footnotes > hr { display: none; }
+.markdown-body .footnote-back-ref { font-family: "Segoe UI Symbol", "Segoe UI", sans-serif; text-decoration: none; }
 .markdown-body .code-wrap > pre { margin-bottom: 16px; }
 .markdown-body pre code.hljs { padding: 0; background: transparent; }
 .code-copy {

@@ -13,6 +13,18 @@ public partial class App : Application
 {
     private SingleInstance? _instance;
 
+    /// <summary>Масштаб интерфейса для проверки вида при 150/200 % (переменная MDVIEWER_UI_SCALE, только для тестов).</summary>
+    public static double UiScale { get; set; } = 1.0;
+
+    /// <summary>Применить проверочный масштаб к содержимому диалога.</summary>
+    public static void ApplyUiScale(FrameworkElement content)
+    {
+        if (UiScale != 1.0)
+        {
+            content.LayoutTransform = new System.Windows.Media.ScaleTransform(UiScale, UiScale);
+        }
+    }
+
     public const string WebView2DownloadUrl = "https://developer.microsoft.com/microsoft-edge/webview2/";
 
     protected override void OnStartup(StartupEventArgs e)

@@ -81,6 +81,8 @@ public sealed class ChoiceDialog : Window
         }
 
         root.Children.Add(panel);
+        App.ApplyUiScale(root);
+        MaxWidth *= App.UiScale;
         Content = root;
         SourceInitialized += (_, _) => ThemeManager.ApplyTitleBar(this);
     }

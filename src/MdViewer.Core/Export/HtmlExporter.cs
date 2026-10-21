@@ -42,6 +42,8 @@ public static partial class HtmlExporter
         .markdown-body .mermaid svg { max-width: 100%; height: auto; }
         .markdown-body div.math { overflow-x: auto; margin: 0 0 16px; }
         .markdown-body pre code.hljs { padding: 0; background: transparent; }
+        .markdown-body .footnotes > hr { display: none; }
+        .markdown-body .footnote-back-ref { font-family: "Segoe UI Symbol", "Segoe UI", sans-serif; text-decoration: none; }
         .mdv-error { display: block; white-space: pre-wrap; font: 13px Consolas, monospace; padding: 8px 12px; border-radius: 6px; color: #82071e; background: #ffebe9; border: 1px solid #ff818266; }
         @media print {
           .markdown-body { max-width: none; padding: 0; }

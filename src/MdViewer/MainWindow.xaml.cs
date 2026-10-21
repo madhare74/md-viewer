@@ -611,6 +611,7 @@ public partial class MainWindow : Window
 
     private void ApplyUiScale()
     {
+        App.UiScale = _uiScale;
         RootPanel.LayoutTransform = _uiScale == 1.0 ? Transform.Identity : new ScaleTransform(_uiScale, _uiScale);
         foreach (var t in _tabs)
         {

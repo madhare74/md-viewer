@@ -147,6 +147,9 @@ public sealed class SettingsWindow : Window
         buttons.Children.Add(cancel);
         root.Children.Add(buttons);
 
+        App.ApplyUiScale(root);
+        Width *= App.UiScale;
+        MaxHeight = SystemParameters.WorkArea.Height;
         Content = new ScrollViewer { Content = root, VerticalScrollBarVisibility = ScrollBarVisibility.Auto };
         SourceInitialized += (_, _) => ThemeManager.ApplyTitleBar(this);
     }
