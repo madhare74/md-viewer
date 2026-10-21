@@ -540,7 +540,7 @@ public partial class MainWindow
 
     // ---------------- Сообщения со страницы ----------------
 
-    private void OnTabMessage(DocumentTab tab, JsonElement msg, CoreWebView2ObjectCollectionView? extra)
+    private void OnTabMessage(DocumentTab tab, JsonElement msg, IEnumerable<object>? extra)
     {
         string type = msg.TryGetProperty("type", out var t) ? t.GetString() ?? string.Empty : string.Empty;
         switch (type)

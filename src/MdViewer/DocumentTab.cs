@@ -50,7 +50,7 @@ public sealed class DocumentTab : INotifyPropertyChanged, IDisposable
     public event PropertyChangedEventHandler? PropertyChanged;
 
     /// <summary>Сообщение со страницы (тип, данные, дополнительные объекты — например, перетащенные файлы).</summary>
-    public event Action<DocumentTab, JsonElement, CoreWebView2ObjectCollectionView?>? MessageReceived;
+    public event Action<DocumentTab, JsonElement, IEnumerable<object>?>? MessageReceived;
 
     /// <summary>Файл изменён другой программой (вызывается в потоке интерфейса после паузы).</summary>
     public event Action<DocumentTab>? ExternalChange;
@@ -277,7 +277,7 @@ public sealed class DocumentTab : INotifyPropertyChanged, IDisposable
                 break;
         }
 
-        CoreWebView2ObjectCollectionView? extra = null;
+        IEnumerable<object>? extra = null;
         try
         {
             extra = e.AdditionalObjects;
