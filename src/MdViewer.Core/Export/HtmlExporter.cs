@@ -37,14 +37,15 @@ public static partial class HtmlExporter
         body { margin: 0; background: #ffffff; }
         .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; }
         @media (max-width: 767px) { .markdown-body { padding: 15px; } }
-        .markdown-body div.mermaid { text-align: center; margin: 0 0 16px; overflow-x: auto; }
-        .markdown-body div.mermaid svg { max-width: 100%; height: auto; }
+        .markdown-body .mermaid { text-align: center; margin: 0 0 16px; overflow-x: auto; }
+        .markdown-body pre.mermaid { background: transparent; padding: 0; white-space: normal; font-family: inherit; }
+        .markdown-body .mermaid svg { max-width: 100%; height: auto; }
         .markdown-body div.math { overflow-x: auto; margin: 0 0 16px; }
         .markdown-body pre code.hljs { padding: 0; background: transparent; }
         .mdv-error { display: block; white-space: pre-wrap; font: 13px Consolas, monospace; padding: 8px 12px; border-radius: 6px; color: #82071e; background: #ffebe9; border: 1px solid #ff818266; }
         @media print {
           .markdown-body { max-width: none; padding: 0; }
-          .markdown-body pre, .markdown-body tr, .markdown-body blockquote, .markdown-body img, .markdown-body div.mermaid, .markdown-body .katex-display { break-inside: avoid; }
+          .markdown-body pre, .markdown-body tr, .markdown-body blockquote, .markdown-body img, .markdown-body .mermaid, .markdown-body .katex-display { break-inside: avoid; }
           .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 { break-after: avoid; }
         }
         """;

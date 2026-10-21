@@ -31,7 +31,7 @@ public class MarkdownTests
         Assert.Contains("class=\"language-python\"", h);
         Assert.Contains("class=\"language-csharp\"", h);
         Assert.Contains("class=\"math\"", h);
-        Assert.Contains("<div class=\"mermaid\"", h);
+        Assert.Contains("class=\"mermaid\"", h);
         Assert.Contains("<img src=\"images/pic.png\"", h);
         Assert.Contains("class=\"footnotes\"", h);
         Assert.Contains("<details>", h);
@@ -63,7 +63,7 @@ public class MarkdownTests
     public void MermaidBlock_IsKeptAsTextForThePage()
     {
         string h = Html("```mermaid\ngraph TD\nA-->B\n```\n");
-        Assert.Contains("<div class=\"mermaid\"", h);
+        Assert.Contains("class=\"mermaid\"", h);
         Assert.Contains("A--&gt;B", h);
     }
 
@@ -71,7 +71,7 @@ public class MarkdownTests
     public void MermaidError_DoesNotBreakDocument()
     {
         var res = _r.Render(Samples.Read("mermaid-error.md"));
-        Assert.Contains("<div class=\"mermaid\"", res.Html);
+        Assert.Contains("class=\"mermaid\"", res.Html);
         Assert.Contains("Документ отображается дальше.", res.Html);
         Assert.Contains("id=\"конец\"", res.Html);
     }

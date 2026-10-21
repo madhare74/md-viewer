@@ -420,7 +420,7 @@ function mermaidTheme() {
 }
 
 async function renderMermaid(rootEl, token) {
-  const blocks = [...rootEl.querySelectorAll('div.mermaid:not([data-done])')];
+  const blocks = [...rootEl.querySelectorAll('.mermaid:not([data-done])')];
   if (!blocks.length) return;
   let m;
   try {
@@ -462,7 +462,7 @@ async function renderMermaid(rootEl, token) {
 }
 
 function resetMermaid() {
-  for (const b of preview.querySelectorAll('div.mermaid[data-done]')) {
+  for (const b of preview.querySelectorAll('.mermaid[data-done]')) {
     delete b.dataset.done;
     b.classList.remove('mermaid-ok', 'mermaid-error');
     b.textContent = b.dataset.src || '';
@@ -1056,7 +1056,7 @@ window.mdv = {
     version: S.version,
     mermaidOk: preview.querySelectorAll('.mermaid-ok').length,
     mermaidErrors: preview.querySelectorAll('.mermaid-error').length,
-    mermaidPending: preview.querySelectorAll('div.mermaid:not(.mermaid-ok):not(.mermaid-error)').length,
+    mermaidPending: preview.querySelectorAll('.mermaid:not(.mermaid-ok):not(.mermaid-error)').length,
     exporting: S.exporting,
     mathOk: preview.querySelectorAll('.math-ok').length,
     mathErrors: preview.querySelectorAll('.math-error').length,
