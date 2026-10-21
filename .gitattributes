@@ -1,0 +1,4 @@
+* text=auto
+tests/samples/** -text
+*.png binary
+*.ico binary

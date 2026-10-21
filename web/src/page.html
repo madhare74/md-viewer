@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src https://app.mdviewer.example; style-src https://app.mdviewer.example 'unsafe-inline'; font-src https://app.mdviewer.example data:; img-src https: http: data: blob:; media-src https: http: data:; connect-src 'none'; frame-src 'none'; object-src 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://doc.mdviewer.example/">
+<title>MD Viewer</title>
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/github-markdown-light.css" data-theme="light">
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/github-markdown-dark.css" data-theme="dark" disabled>
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/hljs-github.css" data-theme="light">
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/hljs-github-dark.css" data-theme="dark" disabled>
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/katex/katex.min.css">
+<link rel="stylesheet" href="https://app.mdviewer.example/lib/app.css">
+</head>
+<body>
+<div id="root" class="mode-view">
+  <nav id="toc" aria-label="Оглавление">
+    <h2>Оглавление</h2>
+    <ul id="toc-list"></ul>
+  </nav>
+  <div id="toc-splitter" title="Перетащите, чтобы изменить ширину"></div>
+  <div id="main">
+    <section id="editor-pane" aria-label="Редактор">
+      <div id="fmt-toolbar" role="toolbar" aria-label="Форматирование">
+        <button type="button" data-cmd="bold" title="Жирный (Ctrl+B)"><b>Ж</b></button>
+        <button type="button" data-cmd="italic" title="Курсив (Ctrl+I)"><i>К</i></button>
+        <button type="button" data-cmd="heading" title="Заголовок">H</button>
+        <span class="sep"></span>
+        <button type="button" data-cmd="list" title="Маркированный список">•&#8201;—</button>
+        <button type="button" data-cmd="task" title="Список задач">☑</button>
+        <button type="button" data-cmd="quote" title="Цитата">❝</button>
+        <button type="button" data-cmd="code" title="Код">&lt;/&gt;</button>
+        <span class="sep"></span>
+        <button type="button" data-cmd="link" title="Ссылка (Ctrl+K)">🔗</button>
+        <button type="button" data-cmd="table" title="Таблица">▦</button>
+        <button type="button" data-cmd="image" title="Картинка">🖼</button>
+      </div>
+      <div id="editor"></div>
+    </section>
+    <div id="splitter" title="Перетащите, чтобы изменить ширину"></div>
+    <section id="preview-pane" tabindex="-1" aria-label="Просмотр">
+      <article id="preview" class="markdown-body"></article>
+    </section>
+  </div>
+  <div id="findbar" hidden>
+    <input id="find-input" type="text" placeholder="Найти" spellcheck="false" aria-label="Найти">
+    <span id="find-count"></span>
+    <button type="button" id="find-prev" title="Предыдущее (Shift+Enter)">↑</button>
+    <button type="button" id="find-next" title="Следующее (Enter)">↓</button>
+    <button type="button" id="find-close" title="Закрыть (Esc)">✕</button>
+  </div>
+</div>
+<script src="https://app.mdviewer.example/lib/app.bundle.js"></script>
+</body>
+</html>

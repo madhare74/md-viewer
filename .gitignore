@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+node_modules/
+src/MdViewer/wwwroot/
+publish/
+artifacts/
+TestResults/
+*.trx

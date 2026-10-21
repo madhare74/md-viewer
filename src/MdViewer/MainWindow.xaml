@@ -1,0 +1,200 @@
+<Window x:Class="MdViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MD Viewer"
+        Width="1200" Height="800" MinWidth="480" MinHeight="320"
+        AllowDrop="True"
+        FontFamily="Segoe UI" FontSize="13"
+        Background="{DynamicResource Brush.Window}"
+        Foreground="{DynamicResource Brush.Text}"
+        AutomationProperties.AutomationId="MainWindow"
+        UseLayoutRounding="True">
+    <Grid x:Name="RootGrid">
+        <DockPanel x:Name="RootPanel">
+            <!-- Меню -->
+            <Menu x:Name="MainMenu" DockPanel.Dock="Top" Background="{DynamicResource Brush.Panel}" Foreground="{DynamicResource Brush.Text}" Padding="2,2">
+                <MenuItem Header="_Файл" x:Name="FileMenu">
+                    <MenuItem Header="Новый документ" InputGestureText="Ctrl+N" Click="OnNew" />
+                    <MenuItem Header="Открыть…" InputGestureText="Ctrl+O" Click="OnOpen" />
+                    <MenuItem Header="Недавние файлы" x:Name="RecentMenu" SubmenuOpened="OnRecentMenuOpened">
+                        <MenuItem Header="(пусто)" IsEnabled="False" />
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Сохранить" InputGestureText="Ctrl+S" Click="OnSave" x:Name="SaveMenuItem" />
+                    <MenuItem Header="Сохранить как…" InputGestureText="Ctrl+Shift+S" Click="OnSaveAs" x:Name="SaveAsMenuItem" />
+                    <MenuItem Header="Кодировка" x:Name="EncodingMenu" SubmenuOpened="OnEncodingMenuOpened">
+                        <MenuItem Header="(нет документа)" IsEnabled="False" />
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Экспорт" x:Name="ExportMenu">
+                        <MenuItem Header="PDF…" Click="OnExportPdf" />
+                        <MenuItem Header="HTML…" Click="OnExportHtml" />
+                    </MenuItem>
+                    <MenuItem Header="Печать…" InputGestureText="Ctrl+P" Click="OnPrint" x:Name="PrintMenuItem" />
+                    <Separator />
+                    <MenuItem Header="Закрыть вкладку" InputGestureText="Ctrl+W" Click="OnCloseTab" />
+                    <MenuItem Header="Выход" InputGestureText="Alt+F4" Click="OnExit" />
+                </MenuItem>
+                <MenuItem Header="_Правка">
+                    <MenuItem Header="Отменить" InputGestureText="Ctrl+Z" Tag="undo" Click="OnPageCommand" />
+                    <MenuItem Header="Повторить" InputGestureText="Ctrl+Y" Tag="redo" Click="OnPageCommand" />
+                    <Separator />
+                    <MenuItem Header="Найти…" InputGestureText="Ctrl+F" Tag="find" Click="OnPageCommand" />
+                    <MenuItem Header="Заменить…" InputGestureText="Ctrl+H" Tag="replace" Click="OnPageCommand" />
+                    <Separator />
+                    <MenuItem Header="Жирный" InputGestureText="Ctrl+B" Tag="bold" Click="OnPageCommand" />
+                    <MenuItem Header="Курсив" InputGestureText="Ctrl+I" Tag="italic" Click="OnPageCommand" />
+                    <MenuItem Header="Заголовок" Tag="heading" Click="OnPageCommand" />
+                    <MenuItem Header="Список" Tag="list" Click="OnPageCommand" />
+                    <MenuItem Header="Список задач" Tag="task" Click="OnPageCommand" />
+                    <MenuItem Header="Цитата" Tag="quote" Click="OnPageCommand" />
+                    <MenuItem Header="Код" Tag="code" Click="OnPageCommand" />
+                    <MenuItem Header="Ссылка" InputGestureText="Ctrl+K" Tag="link" Click="OnPageCommand" />
+                    <MenuItem Header="Таблица" Tag="table" Click="OnPageCommand" />
+                    <MenuItem Header="Картинка…" Tag="image" Click="OnPageCommand" />
+                </MenuItem>
+                <MenuItem Header="_Вид">
+                    <MenuItem Header="Просмотр" InputGestureText="Ctrl+1" x:Name="ViewModeMenu" IsCheckable="False" Click="OnModeView" />
+                    <MenuItem Header="Правка и просмотр" InputGestureText="Ctrl+2" x:Name="SplitModeMenu" IsCheckable="False" Click="OnModeSplit" />
+                    <MenuItem Header="Правка" InputGestureText="Ctrl+3" x:Name="EditModeMenu" IsCheckable="False" Click="OnModeEdit" />
+                    <Separator />
+                    <MenuItem Header="Оглавление" InputGestureText="Ctrl+Shift+O" x:Name="TocMenu" Click="OnToggleToc" />
+                    <MenuItem Header="Текст во всю ширину" x:Name="FullWidthMenu" Click="OnToggleFullWidth" />
+                    <MenuItem Header="Перенос строк в редакторе" x:Name="WrapMenu" Click="OnToggleWrap" />
+                    <Separator />
+                    <MenuItem Header="Тема">
+                        <MenuItem Header="Светлая" x:Name="ThemeLightMenu" Tag="Light" Click="OnThemeMenu" />
+                        <MenuItem Header="Тёмная" x:Name="ThemeDarkMenu" Tag="Dark" Click="OnThemeMenu" />
+                        <MenuItem Header="Как в системе" x:Name="ThemeSystemMenu" Tag="System" Click="OnThemeMenu" />
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Увеличить" InputGestureText="Ctrl+Плюс" Click="OnZoomIn" />
+                    <MenuItem Header="Уменьшить" InputGestureText="Ctrl+Минус" Click="OnZoomOut" />
+                    <MenuItem Header="Обычный масштаб" InputGestureText="Ctrl+0" Click="OnZoomReset" />
+                    <Separator />
+                    <MenuItem Header="Настройки…" InputGestureText="Ctrl+," Click="OnSettings" />
+                </MenuItem>
+                <MenuItem Header="_Справка">
+                    <MenuItem Header="Горячие клавиши" Click="OnShortcutsHelp" />
+                    <MenuItem Header="О программе" Click="OnAbout" />
+                </MenuItem>
+            </Menu>
+
+            <!-- Панель инструментов: переносится на новую строку, если не помещается -->
+            <Border DockPanel.Dock="Top" Background="{DynamicResource Brush.Panel}" BorderBrush="{DynamicResource Brush.Border}" BorderThickness="0,0,0,1" Padding="6,2">
+                <WrapPanel x:Name="Toolbar" Orientation="Horizontal" AutomationProperties.AutomationId="Toolbar">
+                    <Button Style="{StaticResource ToolButton}" Click="OnOpen" ToolTip="Открыть файл (Ctrl+O)" AutomationProperties.AutomationId="OpenButton">
+                        <TextBlock Text="📂 Открыть" />
+                    </Button>
+                    <Button Style="{StaticResource ToolButton}" Click="OnSave" ToolTip="Сохранить (Ctrl+S)" x:Name="SaveButton" AutomationProperties.AutomationId="SaveToolbarButton">
+                        <TextBlock Text="💾 Сохранить" />
+                    </Button>
+                    <Border Width="1" Margin="6,4" Background="{DynamicResource Brush.Border}" />
+                    <ToggleButton x:Name="ModeViewButton" Style="{StaticResource ToolToggle}" Click="OnModeView" ToolTip="Только оформленный документ (Ctrl+1)" AutomationProperties.AutomationId="ModeView">
+                        <TextBlock Text="Просмотр" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="ModeSplitButton" Style="{StaticResource ToolToggle}" Click="OnModeSplit" ToolTip="Редактор и просмотр рядом (Ctrl+2)" AutomationProperties.AutomationId="ModeSplit">
+                        <TextBlock Text="Правка и просмотр" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="ModeEditButton" Style="{StaticResource ToolToggle}" Click="OnModeEdit" ToolTip="Только редактор (Ctrl+3)" AutomationProperties.AutomationId="ModeEdit">
+                        <TextBlock Text="Правка" />
+                    </ToggleButton>
+                    <Border Width="1" Margin="6,4" Background="{DynamicResource Brush.Border}" />
+                    <ToggleButton x:Name="TocButton" Style="{StaticResource ToolToggle}" Click="OnToggleToc" ToolTip="Показать или скрыть оглавление (Ctrl+Shift+O)" AutomationProperties.AutomationId="TocToggle">
+                        <TextBlock Text="☰ Оглавление" />
+                    </ToggleButton>
+                    <Button Style="{StaticResource ToolButton}" Click="OnExportPdf" ToolTip="Экспорт в PDF" AutomationProperties.AutomationId="ExportPdfButton">
+                        <TextBlock Text="PDF" />
+                    </Button>
+                    <Button Style="{StaticResource ToolButton}" Click="OnExportHtml" ToolTip="Экспорт в HTML" AutomationProperties.AutomationId="ExportHtmlButton">
+                        <TextBlock Text="HTML" />
+                    </Button>
+                    <Button Style="{StaticResource ToolButton}" Click="OnSettings" ToolTip="Настройки (Ctrl+,)" AutomationProperties.AutomationId="SettingsButton">
+                        <TextBlock Text="⚙ Настройки" />
+                    </Button>
+                </WrapPanel>
+            </Border>
+
+            <!-- Строка состояния -->
+            <Border DockPanel.Dock="Bottom" Background="{DynamicResource Brush.Panel}" BorderBrush="{DynamicResource Brush.Border}" BorderThickness="0,1,0,0" Padding="8,3">
+                <DockPanel LastChildFill="True">
+                    <TextBlock x:Name="StatusZoom" DockPanel.Dock="Right" Margin="12,0,0,0" Foreground="{DynamicResource Brush.Muted}" Text="100 %" />
+                    <TextBlock x:Name="StatusLineEnding" DockPanel.Dock="Right" Margin="12,0,0,0" Foreground="{DynamicResource Brush.Muted}" />
+                    <TextBlock x:Name="StatusEncoding" DockPanel.Dock="Right" Margin="12,0,0,0" Foreground="{DynamicResource Brush.Muted}" />
+                    <TextBlock x:Name="StatusPath" Foreground="{DynamicResource Brush.Muted}" TextTrimming="CharacterEllipsis" AutomationProperties.AutomationId="StatusPath" />
+                </DockPanel>
+            </Border>
+
+            <!-- Вкладки -->
+            <Border DockPanel.Dock="Top" Background="{DynamicResource Brush.Panel}" BorderBrush="{DynamicResource Brush.Border}" BorderThickness="0,0,0,1" x:Name="TabStripBorder">
+                <ListBox x:Name="TabStrip"
+                         AutomationProperties.AutomationId="TabStrip"
+                         AutomationProperties.Name="Вкладки"
+                         Background="Transparent" BorderThickness="0" Padding="4,4,4,0"
+                         ItemContainerStyle="{StaticResource TabItemStyle}"
+                         SelectionMode="Single"
+                         ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                         ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                         SelectionChanged="OnTabSelectionChanged"
+                         AllowDrop="True">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="●" Margin="0,0,5,0" VerticalAlignment="Center" Foreground="{DynamicResource Brush.Dirty}" x:Name="DirtyDot" Visibility="Collapsed" />
+                                <TextBlock Text="{Binding Title}" MaxWidth="240" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" />
+                                <Button Content="✕" Style="{StaticResource ToolButton}" Padding="5,0" Margin="6,0,0,0" FontSize="11"
+                                        VerticalAlignment="Center" Click="OnTabCloseButton" ToolTip="Закрыть (Ctrl+W)"
+                                        AutomationProperties.Name="Закрыть вкладку" AutomationProperties.AutomationId="CloseTabButton" />
+                            </StackPanel>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsDirty}" Value="True">
+                                    <Setter TargetName="DirtyDot" Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+
+            <!-- Документы -->
+            <Grid x:Name="ContentHost">
+                <ScrollViewer x:Name="WelcomePanel" VerticalScrollBarVisibility="Auto" AutomationProperties.AutomationId="WelcomePanel">
+                    <StackPanel MaxWidth="560" Margin="24,48" HorizontalAlignment="Center">
+                        <TextBlock Text="MD Viewer" FontSize="28" FontWeight="SemiBold" Margin="0,0,0,8" />
+                        <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource Brush.Muted}" Margin="0,0,0,20"
+                                   Text="Откройте файл Markdown через меню «Файл → Открыть» (Ctrl+O) или перетащите его в это окно." />
+                        <WrapPanel Margin="0,0,0,24">
+                            <Button Style="{StaticResource AccentButton}" Click="OnOpen" Margin="0,0,8,8" AutomationProperties.AutomationId="WelcomeOpen">
+                                <TextBlock Text="Открыть файл…" />
+                            </Button>
+                            <Button Style="{StaticResource DialogButton}" Click="OnNew" Margin="0,0,8,8" AutomationProperties.AutomationId="WelcomeNew">
+                                <TextBlock Text="Новый документ" />
+                            </Button>
+                        </WrapPanel>
+                        <TextBlock Text="Недавние файлы" FontWeight="SemiBold" Margin="0,0,0,6" x:Name="WelcomeRecentHeader" />
+                        <ItemsControl x:Name="WelcomeRecent">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Style="{StaticResource ToolButton}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"
+                                            Click="OnWelcomeRecent" Tag="{Binding}" ToolTip="{Binding}" Padding="6,4" Margin="0,1">
+                                        <TextBlock Text="{Binding}" TextTrimming="CharacterEllipsis" />
+                                    </Button>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </DockPanel>
+
+        <!-- Подсказка при перетаскивании файлов -->
+        <Border x:Name="DropOverlay" Visibility="Collapsed" Background="#330969da" BorderBrush="{DynamicResource Brush.Accent}" BorderThickness="3" IsHitTestVisible="False">
+            <TextBlock Text="Отпустите, чтобы открыть" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource Brush.Accent}" />
+        </Border>
+    </Grid>
+</Window>
