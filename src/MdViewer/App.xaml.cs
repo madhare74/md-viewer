@@ -75,6 +75,7 @@ public partial class App : Application
         var window = new MainWindow(files, automation);
         MainWindow = window;
         window.Show();
+        UiWatchdog.Start(Dispatcher);
         _instance?.StartListening(async paths =>
         {
             // Ответ «принято» — только когда поток окна жив и обработал запрос.

@@ -146,6 +146,19 @@ public partial class MainWindow : Window
 
         UpdateWelcome();
         Log.Info($"Запуск: открыто вкладок {_tabs.Count}");
+        try
+        {
+            var dpi = System.Windows.Media.VisualTreeHelper.GetDpi(this);
+            Log.Info($"Среда: Windows {Environment.OSVersion.Version}, WebView2 {CoreWebView2Environment.GetAvailableBrowserVersionString()}, " +
+                $"масштаб экрана {dpi.PixelsPerDip * 100:F0} %, экран {SystemParameters.PrimaryScreenWidth}x{SystemParameters.PrimaryScreenHeight}, " +
+                $"мониторов (виртуальный экран) {SystemParameters.VirtualScreenWidth}x{SystemParameters.VirtualScreenHeight}, окно {WindowState}, тема {(ThemeManager.IsDark ? "тёмная" : "светлая")}");
+        }
+        catch (Exception ex)
+        {
+            Log.Error("Сведения о среде", ex);
+        }
+
+        UiWatchdog.Phase("после запуска");
     }
 
     internal Task<CoreWebView2Environment> GetEnvironmentAsync()
@@ -174,6 +187,7 @@ public partial class MainWindow : Window
 
     private async Task<DocumentTab> CreateTabAsync(Action<DocumentTab> setup, int? index = null)
     {
+        UiWatchdog.Phase("создание вкладки");
         var env = await GetEnvironmentAsync();
         var tab = new DocumentTab(_renderer, NextUntitledName());
         setup(tab);
@@ -258,6 +272,7 @@ public partial class MainWindow : Window
 
     private void OnTabSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
+        UiWatchdog.Phase("переключение вкладки");
         foreach (var t in _tabs)
         {
             t.Web.Visibility = t == ActiveTab ? Visibility.Visible : Visibility.Collapsed;
@@ -646,8 +661,16 @@ public partial class MainWindow : Window
         Height = p.Height;
         if (p.Maximized)
         {
-            WindowState = WindowState.Maximized;
+            // Разворачивать уже показанное окно: так WebView2 получает правильные размеры.
+            ContentRendered += MaximizeOnce;
         }
+    }
+
+    private void MaximizeOnce(object? sender, EventArgs e)
+    {
+        ContentRendered -= MaximizeOnce;
+        UiWatchdog.Phase("разворачивание окна");
+        Dispatcher.InvokeAsync(() => WindowState = WindowState.Maximized, System.Windows.Threading.DispatcherPriority.Background);
     }
 
     private void SavePlacement()
