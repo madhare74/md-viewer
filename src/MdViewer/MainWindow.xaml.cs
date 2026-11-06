@@ -159,6 +159,9 @@ public partial class MainWindow : Window
         }
 
         UiWatchdog.Phase("после запуска");
+        var hwnd = new WindowInteropHelper(this).Handle;
+        _ = Task.Delay(3000).ContinueWith(_ => WindowProbe.LogPoints(hwnd, "через 3 с после запуска"), TaskScheduler.Default);
+        _ = Task.Delay(15000).ContinueWith(_ => WindowProbe.LogPoints(hwnd, "через 15 с после запуска"), TaskScheduler.Default);
     }
 
     internal Task<CoreWebView2Environment> GetEnvironmentAsync()
