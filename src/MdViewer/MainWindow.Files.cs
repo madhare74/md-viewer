@@ -80,7 +80,20 @@ public partial class MainWindow
                 continue;
             }
 
-            var tab = await OpenFileAsync(path, quiet, encoding);
+            DocumentTab? tab = null;
+            try
+            {
+                tab = await OpenFileAsync(path, quiet, encoding);
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Не удалось открыть " + path, ex);
+                if (!quiet)
+                {
+                    ChoiceDialog.Info(this, $"Не удалось открыть файл «{Path.GetFileName(path)}».", ex.Message);
+                }
+            }
+
             if (tab is not null)
             {
                 last = tab;
@@ -441,28 +454,44 @@ public partial class MainWindow
         }
 
         _closing = true;
+        bool close = false;
         try
         {
+            close = true;
             foreach (var tab in _tabs.ToList())
             {
                 if (!await ConfirmSaveAsync(tab))
                 {
-                    _closing = false;
-                    return;
+                    close = false;
+                    break;
                 }
             }
-
-            SavePlacement();
-            SaveSettings();
-            _closeConfirmed = true;
-            _automationServer?.Stop();
-            await Dispatcher.InvokeAsync(Close);
         }
         catch (Exception ex)
         {
+            // Ошибка при проверке правок не должна мешать закрыть окно.
             Log.Error("Ошибка при закрытии", ex);
-            _closing = false;
         }
+
+        if (!close)
+        {
+            _closing = false;
+            return;
+        }
+
+        try
+        {
+            SavePlacement();
+            SaveSettings();
+            _automationServer?.Stop();
+        }
+        catch (Exception ex)
+        {
+            Log.Error("Ошибка при сохранении настроек", ex);
+        }
+
+        _closeConfirmed = true;
+        _ = Dispatcher.InvokeAsync(Close);
     }
 
     // ---------------- Внешние изменения файла ----------------

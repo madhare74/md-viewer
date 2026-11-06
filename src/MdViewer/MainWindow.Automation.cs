@@ -159,6 +159,14 @@ public partial class MainWindow
             case "moveTab":
                 MoveTab((int)Num("from", 0), (int)Num("to", 0));
                 return Ok(State());
+            case "freezeUi":
+                {
+                    // Имитация зависшего окна для проверки передачи файлов новому экземпляру.
+                    int ms = (int)Num("ms", 15000);
+                    _ = Dispatcher.InvokeAsync(() => Thread.Sleep(ms), System.Windows.Threading.DispatcherPriority.Send);
+                    return Ok();
+                }
+
             case "log":
                 return Ok(File.Exists(Log.FilePath) ? File.ReadAllText(Log.FilePath) : string.Empty);
             default:

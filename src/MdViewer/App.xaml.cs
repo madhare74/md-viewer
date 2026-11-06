@@ -75,7 +75,12 @@ public partial class App : Application
         var window = new MainWindow(files, automation);
         MainWindow = window;
         window.Show();
-        _instance?.StartListening(paths => Dispatcher.InvokeAsync(() => window.OpenFromOtherInstance(paths)));
+        _instance?.StartListening(async paths =>
+        {
+            // Ответ «принято» — только когда поток окна жив и обработал запрос.
+            await Dispatcher.InvokeAsync(() => window.OpenFromOtherInstance(paths));
+            return true;
+        });
     }
 
     protected override void OnExit(ExitEventArgs e)
@@ -122,10 +127,18 @@ public partial class App : Application
         }
     }
 
+    private bool _showingError;
+
     private void OnDispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
     {
         Log.Error("Ошибка в интерфейсе", e.Exception);
         e.Handled = true;
+        if (_showingError)
+        {
+            return;
+        }
+
+        _showingError = true;
         try
         {
             ChoiceDialog.Info(MainWindow, "Произошла непредвиденная ошибка. Приложение продолжит работу.", e.Exception.Message + Environment.NewLine + "Подробности: " + Log.FilePath);
@@ -133,6 +146,10 @@ public partial class App : Application
         catch
         {
             // ignore
+        }
+        finally
+        {
+            _showingError = false;
         }
     }
 }

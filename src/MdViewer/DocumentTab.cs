@@ -342,7 +342,14 @@ public sealed class DocumentTab : INotifyPropertyChanged, IDisposable
 
         try
         {
-            string json = await Core.ExecuteScriptAsync("window.mdv ? mdv.getText() : null");
+            var script = Core.ExecuteScriptAsync("window.mdv ? mdv.getText() : null");
+            if (await Task.WhenAny(script, Task.Delay(2000)) != script)
+            {
+                Services.Log.Error("Страница не вернула текст за 2 секунды — использую последний полученный");
+                return CurrentText;
+            }
+
+            string json = await script;
             string? text = JsonSerializer.Deserialize<string?>(json);
             if (text is not null)
             {

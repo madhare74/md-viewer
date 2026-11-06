@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading;
+using FlaUI.Core.AutomationElements;
 using FlaUI.Core.Input;
 using FlaUI.Core.WindowsAPI;
 using Xunit;
@@ -334,6 +335,84 @@ public class UiTests
         Keyboard.TypeSimultaneously(VirtualKeyShort.CONTROL, VirtualKeyShort.KEY_V);
         s.WaitUntil(() => Directory.Exists(Path.Combine(dir, "images")) && Directory.GetFiles(Path.Combine(dir, "images"), "image-*.png").Length == 1, 15, "PNG в папке images");
         s.WaitUntil(() => s.Eval("mdv.getText()").Contains("](images/image-"), 10, "ссылка на картинку в тексте");
+    }
+
+    [Fact]
+    public void TitleBarButtons_WorkWithMouse_AfterRestoredSession()
+    {
+        string dir = AppSession.CopySamples();
+        string data = Path.Combine(Path.GetTempPath(), "mdv-data-" + Guid.NewGuid().ToString("N")[..8]);
+        using (var s = AppSession.Start(nameof(TitleBarButtons_WorkWithMouse_AfterRestoredSession) + "-1", [Path.Combine(dir, "all-features.md"), Path.Combine(dir, "links.md")], dataDir: data))
+        {
+            s.Call(new { cmd = "mode", mode = "split" });
+            s.Call(new { cmd = "closeWindow" });
+            s.WaitUntil(() => s.HasExited, 20, "закрытие первой сессии");
+        }
+
+        using var s2 = AppSession.Start(nameof(TitleBarButtons_WorkWithMouse_AfterRestoredSession) + "-2", dataDir: data, noRestore: false);
+        s2.WaitUntil(() => TabCount(s2) == 2, 30, "восстановленные вкладки");
+        s2.WaitRendered();
+        Thread.Sleep(1000);
+        s2.Screenshot("07-restored-session.png", "screen");
+
+        // Меню откликается на мышь
+        var fileMenu = s2.Window.FindFirstDescendant(cf => cf.ByName("Файл"))!.AsMenuItem();
+        Mouse.Click(fileMenu.GetClickablePoint());
+        s2.WaitUntil(() => s2.Window.FindFirstDescendant(cf => cf.ByName("Новый документ")) is not null, 5, "меню «Файл» открылось");
+        Keyboard.Press(VirtualKeyShort.ESCAPE);
+        Thread.Sleep(300);
+
+        // Свернуть — настоящим щелчком мыши по кнопке заголовка
+        var titleBar = s2.Window.TitleBar;
+        Mouse.Click(titleBar.MinimizeButton.GetClickablePoint());
+        s2.WaitUntil(() => s2.Window.Patterns.Window.Pattern.WindowVisualState.Value == FlaUI.Core.Definitions.WindowVisualState.Minimized, 5, "окно свернулось");
+        s2.Window.Patterns.Window.Pattern.SetWindowVisualState(FlaUI.Core.Definitions.WindowVisualState.Normal);
+        Thread.Sleep(800);
+
+        // Закрыть — крестиком
+        Mouse.Click(s2.Window.TitleBar.CloseButton.GetClickablePoint());
+        s2.WaitUntil(() => s2.HasExited, 20, "окно закрылось крестиком");
+    }
+
+    [Fact]
+    public void SecondLaunch_WhenRunningWindowIsFrozen_OpensNewWindow()
+    {
+        string dir = AppSession.CopySamples();
+        using var s = AppSession.Start(nameof(SecondLaunch_WhenRunningWindowIsFrozen_OpensNewWindow), [Path.Combine(dir, "links.md")]);
+        s.Call(new { cmd = "freezeUi", ms = 20000 });
+        var psi = new ProcessStartInfo(AppSession.ExePath) { UseShellExecute = false };
+        psi.ArgumentList.Add(Path.Combine(dir, "headings.md"));
+        psi.Environment["MDVIEWER_DATA_DIR"] = s.DataDir;
+        psi.Environment["MDVIEWER_INSTANCE_ID"] = s.InstanceId;
+        psi.Environment["MDVIEWER_NO_RESTORE"] = "1";
+        using var second = Process.Start(psi)!;
+        try
+        {
+            Assert.False(second.WaitForExit(12000), "новый запуск не должен отдавать файл зависшему окну");
+            Assert.NotEqual(IntPtr.Zero, second.MainWindowHandle == IntPtr.Zero ? WaitHandle(second) : second.MainWindowHandle);
+        }
+        finally
+        {
+            try
+            {
+                second.Kill(entireProcessTree: true);
+            }
+            catch
+            {
+                // ignore
+            }
+        }
+    }
+
+    private static IntPtr WaitHandle(Process p)
+    {
+        for (int i = 0; i < 50 && p.MainWindowHandle == IntPtr.Zero; i++)
+        {
+            Thread.Sleep(200);
+            p.Refresh();
+        }
+
+        return p.MainWindowHandle;
     }
 
     [Theory]

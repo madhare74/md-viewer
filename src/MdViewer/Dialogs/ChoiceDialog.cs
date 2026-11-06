@@ -91,15 +91,20 @@ public sealed class ChoiceDialog : Window
     public static int Show(Window? owner, string message, IReadOnlyList<DialogButton> buttons, string? details = null, string title = "MD Viewer")
     {
         var dlg = new ChoiceDialog(title, message, details, buttons);
-        if (owner is not null && owner.IsLoaded)
+        owner ??= Application.Current?.MainWindow;
+        if (owner is not null && owner != dlg && owner.IsLoaded && owner.IsVisible)
         {
             dlg.Owner = owner;
         }
         else
         {
+            // Без владельца диалог мог оказаться за главным окном и незаметно заблокировать его.
             dlg.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            dlg.ShowInTaskbar = true;
+            dlg.Topmost = true;
         }
 
+        dlg.Loaded += (_, _) => dlg.Activate();
         dlg.ShowDialog();
         if (dlg._result >= 0)
         {
