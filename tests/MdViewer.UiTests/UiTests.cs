@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -337,41 +338,65 @@ public class UiTests
         s.WaitUntil(() => s.Eval("mdv.getText()").Contains("](images/image-"), 10, "ссылка на картинку в тексте");
     }
 
-    [Fact]
-    public void TitleBarButtons_WorkWithMouse_AfterRestoredSession()
+    /// <summary>Настройки как у пользователя: окно развёрнуто, оглавление скрыто, масштаб 130 %, три вкладки.</summary>
+    private static string UserLikeSettings(string dir, bool maximized) =>
+        JsonSerializer.Serialize(new Dictionary<string, object?>
+        {
+            ["Theme"] = "System",
+            ["PreviewZoom"] = 1.3,
+            ["TocVisible"] = false,
+            ["DefaultMode"] = "View",
+            ["OpenTabs"] = new[] { Path.Combine(dir, "all-features.md"), Path.Combine(dir, "headings.md"), Path.Combine(dir, "links.md") },
+            ["RecentFiles"] = new[] { Path.Combine(dir, "links.md") },
+            ["ActiveTab"] = 1,
+            ["Window"] = new Dictionary<string, object> { ["Left"] = 266, ["Top"] = 127, ["Width"] = 1200, ["Height"] = 800, ["Maximized"] = maximized },
+        });
+
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    public void TitleBarButtons_WorkWithMouse_AfterRestoredSession(bool maximized)
     {
         string dir = AppSession.CopySamples();
-        string data = Path.Combine(Path.GetTempPath(), "mdv-data-" + Guid.NewGuid().ToString("N")[..8]);
-        using (var s = AppSession.Start(nameof(TitleBarButtons_WorkWithMouse_AfterRestoredSession) + "-1", [Path.Combine(dir, "all-features.md"), Path.Combine(dir, "links.md")], dataDir: data))
-        {
-            s.Call(new { cmd = "mode", mode = "split" });
-            s.Call(new { cmd = "closeWindow" });
-            s.WaitUntil(() => s.HasExited, 20, "закрытие первой сессии");
-        }
+        string tag = maximized ? "max" : "normal";
+        using var s = AppSession.Start(nameof(TitleBarButtons_WorkWithMouse_AfterRestoredSession) + "-" + tag, settingsJson: UserLikeSettings(dir, maximized), noRestore: false);
+        s.WaitUntil(() => TabCount(s) == 3, 30, "восстановленные вкладки");
+        s.WaitRendered();
+        Thread.Sleep(1500);
+        s.Screenshot($"07-restored-{tag}.png", "screen");
 
-        using var s2 = AppSession.Start(nameof(TitleBarButtons_WorkWithMouse_AfterRestoredSession) + "-2", dataDir: data, noRestore: false);
-        s2.WaitUntil(() => TabCount(s2) == 2, 30, "восстановленные вкладки");
-        s2.WaitRendered();
-        Thread.Sleep(1000);
-        s2.Screenshot("07-restored-session.png", "screen");
+        var ping = s.Call(new { cmd = "pingInput" });
+        _out.WriteLine("Отклик потока окна: " + ping.GetRawText());
+        Assert.True(ping.GetProperty("done").GetBoolean(), "поток окна не обрабатывает ввод: " + ping.GetRawText());
+        Assert.True(ping.GetProperty("isEnabled").GetBoolean(), "окно заблокировано");
 
         // Меню откликается на мышь
-        var fileMenu = s2.Window.FindFirstDescendant(cf => cf.ByName("Файл"))!.AsMenuItem();
-        Mouse.Click(fileMenu.GetClickablePoint());
-        s2.WaitUntil(() => s2.Window.FindFirstDescendant(cf => cf.ByName("Новый документ")) is not null, 5, "меню «Файл» открылось");
+        var fileMenu = s.Window.FindFirstDescendant(cf => cf.ByName("Файл"));
+        Assert.NotNull(fileMenu);
+        Mouse.Click(fileMenu!.GetClickablePoint());
+        s.WaitUntil(() => s.Window.FindFirstDescendant(cf => cf.ByName("Новый документ")) is not null, 5, "меню «Файл» открылось");
         Keyboard.Press(VirtualKeyShort.ESCAPE);
         Thread.Sleep(300);
 
-        // Свернуть — настоящим щелчком мыши по кнопке заголовка
-        var titleBar = s2.Window.TitleBar;
-        Mouse.Click(titleBar.MinimizeButton.GetClickablePoint());
-        s2.WaitUntil(() => s2.Window.Patterns.Window.Pattern.WindowVisualState.Value == FlaUI.Core.Definitions.WindowVisualState.Minimized, 5, "окно свернулось");
-        s2.Window.Patterns.Window.Pattern.SetWindowVisualState(FlaUI.Core.Definitions.WindowVisualState.Normal);
-        Thread.Sleep(800);
+        // Вкладка переключается щелчком
+        var tabItem = s.Window.FindFirstDescendant(cf => cf.ByAutomationId("TabStrip"))!.AsListBox().Items[0];
+        Mouse.Click(tabItem.GetClickablePoint());
+        s.WaitUntil(() => s.State().GetProperty("active").GetInt32() == 0, 5, "переключение вкладки щелчком");
 
-        // Закрыть — крестиком
-        Mouse.Click(s2.Window.TitleBar.CloseButton.GetClickablePoint());
-        s2.WaitUntil(() => s2.HasExited, 20, "окно закрылось крестиком");
+        // Кнопки заголовка: щелчки мышью по координатам (как пользователь)
+        var r = s.Window.BoundingRectangle;
+        int y = Math.Max(r.Top, 0) + 15;
+        int right = maximized ? Math.Min(r.Right, (int)System.Windows.SystemParameters.PrimaryScreenWidth) : r.Right;
+        Mouse.Click(new System.Drawing.Point(right - 115, y));
+        s.WaitUntil(() => s.Window.Patterns.Window.Pattern.WindowVisualState.Value == FlaUI.Core.Definitions.WindowVisualState.Minimized, 5, "окно свернулось кнопкой «Свернуть»");
+        s.Window.Patterns.Window.Pattern.SetWindowVisualState(maximized ? FlaUI.Core.Definitions.WindowVisualState.Maximized : FlaUI.Core.Definitions.WindowVisualState.Normal);
+        Thread.Sleep(1000);
+
+        r = s.Window.BoundingRectangle;
+        y = Math.Max(r.Top, 0) + 15;
+        right = maximized ? Math.Min(r.Right, (int)System.Windows.SystemParameters.PrimaryScreenWidth) : r.Right;
+        Mouse.Click(new System.Drawing.Point(right - 23, y));
+        s.WaitUntil(() => s.HasExited, 20, "окно закрылось крестиком");
     }
 
     [Fact]
@@ -450,8 +475,8 @@ public class UiTests
         // Кнопки панели инструментов и подписи видимы целиком
         foreach (string id in new[] { "ModeView", "ModeSplit", "ModeEdit", "TocToggle", "SettingsButton" })
         {
-            var el = s.Window.FindFirstDescendant(cf => cf.ByAutomationId(id));
-            Assert.NotNull(el);
+            FlaUI.Core.AutomationElements.AutomationElement? el = null;
+            s.WaitUntil(() => (el = s.Window.FindFirstDescendant(cf => cf.ByAutomationId(id))) is not null, 5, "элемент " + id);
             Assert.False(el!.IsOffscreen, id + " за пределами окна");
             var r = el.BoundingRectangle;
             var w = s.Window.BoundingRectangle;

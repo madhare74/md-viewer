@@ -159,6 +159,15 @@ public partial class MainWindow
             case "moveTab":
                 MoveTab((int)Num("from", 0), (int)Num("to", 0));
                 return Ok(State());
+            case "pingInput":
+                {
+                    // Отвечает ли поток окна на приоритете ввода (не занят ли он бесконечной перерисовкой).
+                    var sw = System.Diagnostics.Stopwatch.StartNew();
+                    var op = Dispatcher.InvokeAsync(() => { }, System.Windows.Threading.DispatcherPriority.Input);
+                    bool done = await Task.WhenAny(op.Task, Task.Delay(5000)) == op.Task;
+                    return Ok(new { done, ms = sw.ElapsedMilliseconds, state = WindowState.ToString(), isEnabled = IsEnabled, windows = Application.Current.Windows.Count });
+                }
+
             case "freezeUi":
                 {
                     // Имитация зависшего окна для проверки передачи файлов новому экземпляру.
