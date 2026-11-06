@@ -1,0 +1,50 @@
+
+> md-viewer-web@1.0.0 test
+> node --test test/*.test.mjs
+
+TAP version 13
+# Subtest: страница отправляет ready и рендерит документ
+ok 1 - страница отправляет ready и рендерит документ
+  ---
+  duration_ms: 318.0586
+  type: 'test'
+  ...
+# Subtest: ссылки: внешняя и на другой .md уходят в приложение
+ok 2 - ссылки: внешняя и на другой .md уходят в приложение
+  ---
+  duration_ms: 311.3337
+  type: 'test'
+  ...
+# Subtest: правка текста отправляет textChanged, сохранение — shortcut
+ok 3 - правка текста отправляет textChanged, сохранение — shortcut
+  ---
+  duration_ms: 331.2754
+  type: 'test'
+  ...
+# Subtest: команды форматирования
+ok 4 - команды форматирования
+  ---
+  duration_ms: 96.5374
+  type: 'test'
+  ...
+# Subtest: экспорт: html без кнопок копирования и служебных атрибутов
+ok 5 - экспорт: html без кнопок копирования и служебных атрибутов
+  ---
+  duration_ms: 92.5875
+  type: 'test'
+  ...
+# Subtest: блок mermaid превращается в контейнер схемы
+ok 6 - блок mermaid превращается в контейнер схемы
+  ---
+  duration_ms: 70.1733
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1927.1869
