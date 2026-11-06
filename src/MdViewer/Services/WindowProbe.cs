@@ -47,6 +47,12 @@ public static class WindowProbe
     private static extern int GetWindowLong(IntPtr hwnd, int index);
 
     [DllImport("user32.dll")]
+    private static extern IntPtr GetWindow(IntPtr hwnd, uint cmd);
+
+    [DllImport("user32.dll")]
+    private static extern IntPtr GetForegroundWindow();
+
+    [DllImport("user32.dll")]
     private static extern IntPtr SendMessage(IntPtr hwnd, uint msg, IntPtr wParam, IntPtr lParam);
 
     public static string Describe(IntPtr hwnd)
@@ -78,8 +84,8 @@ public static class WindowProbe
         return $"0x{hwnd.ToInt64():X} класс «{cls}» текст «{text}» процесс {proc} ({pid}) [{r.Left},{r.Top} — {r.Right},{r.Bottom}] стиль 0x{style:X8} доп.0x{ex:X8} видимо {IsWindowVisible(hwnd)}";
     }
 
-    /// <summary>Записывает в журнал, что находится под точками кнопок заголовка и меню.</summary>
-    public static void LogPoints(IntPtr main, string when)
+    /// <summary>Записывает в журнал, что находится под точками кнопок заголовка и меню. Возвращает текст отчёта.</summary>
+    public static string LogPoints(IntPtr main, string when)
     {
         try
         {
@@ -87,6 +93,32 @@ public static class WindowProbe
             int top = Math.Max(r.Top, 0) + 8;
             var sb = new StringBuilder();
             sb.AppendLine($"Проверка окон ({when}). Главное окно: {Describe(main)}");
+            var fg = GetForegroundWindow();
+            sb.AppendLine($"  на переднем плане: {(fg == main ? "MD Viewer" : Describe(fg))}");
+
+            // Видимые окна выше нашего по порядку наложения, задевающие верхние 120 точек окна.
+            sb.AppendLine("  окна поверх MD Viewer в верхней полосе:");
+            int found = 0;
+            for (var h = GetWindow(main, 3); h != IntPtr.Zero; h = GetWindow(h, 3))
+            {
+                if (!IsWindowVisible(h))
+                {
+                    continue;
+                }
+
+                NativeMethods.GetWindowRect(h, out var w);
+                bool overlaps = w.Right > r.Left && w.Left < r.Right && w.Bottom > r.Top && w.Top < Math.Max(r.Top, 0) + 120 && w.Right > w.Left && w.Bottom > w.Top;
+                if (overlaps)
+                {
+                    found++;
+                    sb.AppendLine("    " + Describe(h));
+                }
+            }
+
+            if (found == 0)
+            {
+                sb.AppendLine("    (нет)");
+            }
             void Probe(string name, int x, int y)
             {
                 var h = WindowFromPoint(new POINT { X = x, Y = y });
@@ -120,10 +152,12 @@ public static class WindowProbe
                 return true;
             }, IntPtr.Zero);
             Log.Info(sb.ToString().TrimEnd());
+            return sb.ToString().TrimEnd();
         }
         catch (Exception ex)
         {
             Log.Error("Проверка окон", ex);
+            return ex.Message;
         }
     }
 }

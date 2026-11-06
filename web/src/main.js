@@ -830,7 +830,7 @@ function getExportHtml() {
 
 const HOST_KEYS = new Set([
   'Ctrl+O', 'Ctrl+N', 'Ctrl+S', 'Ctrl+Shift+S', 'Ctrl+W', 'Ctrl+Tab', 'Ctrl+Shift+Tab', 'Ctrl+1', 'Ctrl+2', 'Ctrl+3',
-  'Ctrl+P', 'Ctrl+Shift+O', 'Ctrl+Plus', 'Ctrl+Minus', 'Ctrl+0', 'Ctrl+Comma', 'Ctrl+F4', 'Ctrl+PageDown', 'Ctrl+PageUp',
+  'Ctrl+P', 'Ctrl+Shift+O', 'Ctrl+Shift+D', 'Ctrl+Plus', 'Ctrl+Minus', 'Ctrl+0', 'Ctrl+Comma', 'Ctrl+F4', 'Ctrl+PageDown', 'Ctrl+PageUp',
 ]);
 
 function keyName(e) {

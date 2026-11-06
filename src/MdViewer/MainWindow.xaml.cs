@@ -502,6 +502,32 @@ public partial class MainWindow : Window
         }
     }
 
+    /// <summary>Ctrl+Shift+D: проверка, какие окна перекрывают MD Viewer (результат — в окне и в журнале).</summary>
+    internal void RunWindowProbe()
+    {
+        var hwnd = new WindowInteropHelper(this).Handle;
+        string report = WindowProbe.LogPoints(hwnd, "по Ctrl+Shift+D");
+        var tb = new TextBox
+        {
+            Text = report,
+            IsReadOnly = true,
+            TextWrapping = TextWrapping.Wrap,
+            VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+            FontFamily = new FontFamily("Consolas"),
+            FontSize = 12,
+        };
+        var w = new Window
+        {
+            Title = "Диагностика окна — текст уже в журнале app.log",
+            Owner = this,
+            Width = 900,
+            Height = 500,
+            WindowStartupLocation = WindowStartupLocation.CenterOwner,
+            Content = tb,
+        };
+        w.Show();
+    }
+
     private void OnShortcutsHelp(object sender, RoutedEventArgs e)
     {
         ChoiceDialog.Info(this, "Горячие клавиши",
@@ -587,6 +613,7 @@ public partial class MainWindow : Window
             case "Ctrl+0": ChangeZoom(0); return true;
             case "Ctrl+P": _ = PrintAsync(); return true;
             case "Ctrl+Comma": ShowSettings(); return true;
+            case "Ctrl+Shift+D": RunWindowProbe(); return true;
         }
 
         if (!fromPage && ActiveTab is { } tab)
