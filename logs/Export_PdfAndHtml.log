@@ -1,0 +1,5 @@
+2026-11-06 08:01:02.652 [INFO] Открыт файл C:\Users\runneradmin\AppData\Local\Temp\mdv-ui-5653e53c\all-features.md (UTF-8, 1973 байт)
+2026-11-06 08:01:02.736 [INFO] Запуск: открыто вкладок 1
+2026-11-06 08:01:02.740 [INFO] Среда: Windows 10.0.26100.0, WebView2 156.0.4314.58, масштаб экрана 100 %, экран 1920x1080, мониторов (виртуальный экран) 1920x1080, окно Normal, тема тёмная
+2026-11-06 08:01:03.859 [INFO] Экспорт PDF: D:\a\md-viewer\md-viewer\ui-results\export\all-features.pdf
+2026-11-06 08:01:03.944 [INFO] Экспорт HTML: D:\a\md-viewer\md-viewer\ui-results\export\all-features.html

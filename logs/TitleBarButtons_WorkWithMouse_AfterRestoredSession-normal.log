@@ -1,0 +1,28 @@
+2026-11-06 08:00:36.270 [INFO] Открыт файл C:\Users\runneradmin\AppData\Local\Temp\mdv-ui-e9866c0b\all-features.md (UTF-8, 1973 байт)
+2026-11-06 08:00:36.592 [INFO] Открыт файл C:\Users\runneradmin\AppData\Local\Temp\mdv-ui-e9866c0b\headings.md (UTF-8, 262 байт)
+2026-11-06 08:00:36.785 [INFO] Открыт файл C:\Users\runneradmin\AppData\Local\Temp\mdv-ui-e9866c0b\links.md (UTF-8, 135 байт)
+2026-11-06 08:00:36.819 [INFO] Запуск: открыто вкладок 3
+2026-11-06 08:00:36.823 [INFO] Среда: Windows 10.0.26100.0, WebView2 156.0.4314.58, масштаб экрана 100 %, экран 1920x1080, мониторов (виртуальный экран) 1920x1080, окно Normal, тема светлая
+2026-11-06 08:00:39.837 [INFO] Проверка окон (через 3 с после запуска). Главное окно: 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True
+  на переднем плане: MD Viewer
+  окна поверх MD Viewer в верхней полосе:
+    (нет)
+  кнопка «Закрыть» (1435,142): 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True; верхнее окно наше главное; NCHITTEST 20
+  кнопка «Свернуть» (1343,142): 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True; верхнее окно наше главное; NCHITTEST 2
+  заголовок (866,142): 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True; верхнее окно наше главное; NCHITTEST 2
+  меню «Файл» (296,170): 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True; верхнее окно наше главное; NCHITTEST 1
+  панель инструментов (566,200): 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True; верхнее окно наше главное; NCHITTEST 1
+  окно процесса: 0xB0210 класс «HwndWrapper[MDViewer;;7605e0fd-4dd5-4bd2-ad45-9b8da165bc76]» текст «all-features.md — MD Viewer» процесс MDViewer (6384) [266,127 — 1466,927] стиль 0x16CF0000 доп.0x00040100 видимо True
+  дочернее: 0x100074 класс «Static» текст «» процесс MDViewer (6384) [274,251 — 1458,895] стиль 0x52000000 доп.0x00000020 видимо True
+  дочернее: 0xD0150 класс «Chrome_WidgetWin_0» текст «» процесс MDViewer (6384) [274,251 — 1458,895] стиль 0x56010000 доп.0x00000000 видимо True
+  дочернее: 0x1D006C класс «Chrome_WidgetWin_1» текст «MD Viewer» процесс msedgewebview2 (2736) [274,251 — 1458,895] стиль 0x56000000 доп.0x00200000 видимо True
+  дочернее: 0x13007A класс «Chrome_RenderWidgetHostHWND» текст «Chrome Legacy Window» процесс msedgewebview2 (2736) [274,251 — 1458,895] стиль 0x56300000 доп.0x00000020 видимо True
+  дочернее: 0x1101DA класс «Intermediate D3D Window» текст «» процесс msedgewebview2 (2008) [274,251 — 1458,895] стиль 0x5C000000 доп.0x00280024 видимо True
+  дочернее: 0x180208 класс «Static» текст «» процесс MDViewer (6384) [274,251 — 274,251] стиль 0x42000000 доп.0x00000020 видимо False
+  дочернее: 0x2701DC класс «Chrome_WidgetWin_0» текст «» процесс MDViewer (6384) [274,251 — 1458,895] стиль 0x46010000 доп.0x00000000 видимо False
+  дочернее: 0x17021A класс «Chrome_WidgetWin_1» текст «MD Viewer» процесс msedgewebview2 (2736) [274,251 — 1458,895] стиль 0x46000000 доп.0x00200000 видимо False
+  дочернее: 0x4A023E класс «Intermediate D3D Window» текст «» процесс msedgewebview2 (2008) [274,251 — 1458,895] стиль 0x5C000000 доп.0x00280024 видимо False
+  дочернее: 0x2D0242 класс «Static» текст «» процесс MDViewer (6384) [274,251 — 274,251] стиль 0x42000000 доп.0x00000020 видимо False
+  дочернее: 0x100154 класс «Chrome_WidgetWin_0» текст «» процесс MDViewer (6384) [274,251 — 274,251] стиль 0x46010000 доп.0x00000000 видимо False
+  дочернее: 0x150018 класс «Chrome_WidgetWin_1» текст «MD Viewer» процесс msedgewebview2 (2736) [284,251 — 1245,1283] стиль 0x46000000 доп.0x00200000 видимо False
+  дочернее: 0x1301E4 класс «Intermediate D3D Window» текст «» процесс msedgewebview2 (2008) [284,251 — 1245,1283] стиль 0x5C000000 доп.0x00280024 видимо False
